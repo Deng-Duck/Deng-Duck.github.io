@@ -1,8 +1,9 @@
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于我 | DengDuck&#39;s Blog</title>
+<title>我的阅读 | DengDuck&#39;s Blog</title>
 <meta name="description" content="感谢大家支持DuckOI" />
 <link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico">
 <link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
@@ -15,20 +16,13 @@
 <script src="https://Deng-Duck.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://Deng-Duck.github.io/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="欢迎来到我的小站呀，很高兴遇见你！🤝
-🏠 关于本站
-我的博客园
-本博客是我的新博客，以后只要使用本博客
-优质的旧博客应该会放上来
-👨‍💻 博主是谁
-我是一个广东中山的蒟蒻
-生日是2008年10月31日
-我很喜欢思维题，是DuckOI..." />
-    <meta name="keywords" content="" />
-    <script src="https://Deng-Duck.github.io/media/js/waterfall.min.js"></script>
-    <script src="https://Deng-Duck.github.io/media/js/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.css">
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.js'></script>
   </head>
   <body>
+    <!-- start: #wrapper -->
+    <div class="wrapper">
+      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -95,78 +89,14 @@
         </div>
       </div>
 
-      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
-
-        <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://Deng-Duck.github.io/post-images/about.jpg');">
-            <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2019-01-25"><i class="fa fa-calendar"></i><span class="lately">4 年前</span></time>
-              
-            </div>
-            <div class="info">
-              <div class="tags ">
-                
-              </div>
-              <h1 class="title ularge white bold">关于我</h1>
-            </div>
-          </div>
-        </div>  
-
+      <main id="friends" class="main fullcover no-sidebar content">
+        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
         <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile">
-            <article class="main-article post">
-              <section class="post-content">
-                <div class="text">
-                  <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p><a href="https://www.cnblogs.com/I-am-joker/">我的博客园</a></p>
-<p>本博客是我的新博客，以后只要使用本博客</p>
-<p>优质的旧博客应该会放上来</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>我是一个广东中山的蒟蒻</p>
-<p>生日是2008年10月31日</p>
-<p>我很喜欢思维题，是DuckOI的创始人</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>我喜欢二次元，喜欢周杰伦和初音未来</p>
-<p>喜欢音乐游戏，玩《Malody》《MaiMai》《舞立方》</p>
-<p>喜欢 LoveLive ，但碍于实名认证，不玩游戏</p>
-<p>所有实名认证的游戏都不玩</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>欢迎一起交流！也可以找我们咨询合作！</p>
-<ul>
-<li><strong>微信</strong> <code>DengDuckzs</code>（推荐）</li>
-<li><strong>洛谷</strong> <code>DengDuck</code> <strong>私信</strong>（推荐）</li>
-<li><strong>邮箱</strong> <code>moudengya123@qq.com</code></li>
-<li><strong>Bilibili</strong> <strong>某邓吖</strong> <strong>私信</strong></li>
-</ul>
-
-                </div>
-                <div class="clear"></div>
-              </section>
-            </article>
-            <div class="clear"></div>
-
-            <section class="related section">
-              
-              
-
-                <div class="clear"></div>
-            </section>
-
-              <div class="clear"></div>
-              
-            
-              <div id="comments" class="bg-white hosted ">
-                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
-              </div>
-              <div class="clear"></div>
-            
-
-            </div>
-          </div>
+          <div class="section-content" style="margin-top:3em;"></div>
+        </div>
+        </div>
       </main>
-
-          <footer id="footer" class="grid-container">
+        <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -266,9 +196,15 @@
 
         
 
-      
-    <script src="https://Deng-Duck.github.io/media/js/functions-post.js"></script>
-
+    <script>
+    new Bmdb({
+      type: 'books',
+      selector: '.section-content',
+      secret: '',
+      noMoreText: '没有更多数据了',
+      limit: 30
+    })
+    </script>
     </div>
     <!-- end: #wrapper -->
   </body>

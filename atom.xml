@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Deng-Duck.github.io</id>
     <title>DengDuck&apos;s Blog</title>
-    <updated>2022-08-18T13:14:54.075Z</updated>
+    <updated>2022-08-18T23:38:07.541Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Deng-Duck.github.io"/>
     <link rel="self" href="https://Deng-Duck.github.io/atom.xml"/>
@@ -10,6 +10,230 @@
     <logo>https://Deng-Duck.github.io/images/avatar.png</logo>
     <icon>https://Deng-Duck.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, DengDuck&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[六神教徒戒条]]></title>
+        <id>https://Deng-Duck.github.io/post/SixSixSix/</id>
+        <link href="https://Deng-Duck.github.io/post/SixSixSix/">
+        </link>
+        <updated>2022-08-18T13:27:45.000Z</updated>
+        <content type="html"><![CDATA[<p>1.唯一的神😇是6️⃣神，他给我们带来一切😝——水💧，空气☁️，花露水，动态规划......🤗🌷🌹<br>
+2.大祭司😎听取神😇的天意😋，教徒🙎‍♂🙍要相信大祭司😎的话🙏<br>
+3.每年6️⃣月6️⃣日是6️⃣神日💃，当天起床😴后应该喊6️⃣次6️⃣6️⃣6️⃣❤️<br>
+4.每天的下午6️⃣点6️⃣分要诵读😲😮圣经😇🙏，就是⬆️面的戒条😜<br>
+5.要正确✅的解读🗣神😇的指引，解读🗣到对整个教👶🙏有利❤️为止</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021CSP-J网络连接题解]]></title>
+        <id>https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/</id>
+        <link href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/">
+        </link>
+        <updated>2022-08-18T13:15:09.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="题目链接"><a href="https://www.luogu.com.cn/problem/P7911">题目链接</a></h2>
+<h2 id="题目分析">题目分析</h2>
+<p>map不会冲突！！不一定要like代码中那样加-号！</p>
+<p>模拟，算不上大,</p>
+<p>首先，我们想想整个流程:</p>
+<figure data-type="image" tabindex="1"><img src="https://img2020.cnblogs.com/blog/2478902/202110/2478902-20211031104143152-1577903473.png" alt="" loading="lazy"></figure>
+<p>现在，我们找出难点，逐个瓦解:</p>
+<ul>
+<li>读入提取数 MIDDLE</li>
+<li>非法情况判断 HARD</li>
+<li>是否重复 EASY</li>
+</ul>
+<p>从简到难解决。</p>
+<h3 id="是否重复">是否重复</h3>
+<p>首先，将5个数字<strong>按次序组合成一个大数</strong>，</p>
+<p>本人测试：25525525525565535是<strong>long long</strong>存的下的，</p>
+<p>然后map搞定。</p>
+<p>就解决了，参考代码：</p>
+<pre><code class="language-cpp">long long sum=0;
+sum+=a;
+sum*=1000;
+sum+=b;
+sum*=1000;
+sum+=c;
+sum*=1000;
+sum+=d;
+sum*=100000;
+sum+=e;//转换
+if(s==&quot;Server&quot;)
+{
+	if(m[-sum])
+	{
+		cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+		continue; 
+	}
+	m[-sum]=T;//记录这个服务机的编号，后边客户机要用
+	cout&lt;&lt;&quot;OK&quot;&lt;&lt;endl;
+} 
+else
+{
+	if(!m[-sum])
+	{
+		cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+		continue; 
+	}
+	cout&lt;&lt;m[-sum]&lt;&lt;endl;//输出服务机的编号
+}
+</code></pre>
+<h3 id="读入提取数">读入提取数</h3>
+<p>怎么提取数字呢?</p>
+<p>其实也不难,</p>
+<p>scanf支持<strong>格式输入</strong>,</p>
+<p>如<br>
+<code>scanf(&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e)</code></p>
+<p>输入</p>
+<pre><code class="language-latex">1.1.1.1:1
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>b</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>c</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>d</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>e</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1,b=1,c=1,d=1,e=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></p>
+<p>如果不按格式？</p>
+<pre><code class="language-latex">1:1:1:1.1
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>b</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mi>c</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mi>d</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mi>e</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=1,b=0,c=0,d=0,e=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></p>
+<p><strong>What?不按格式的部分值没有变化？</strong></p>
+<p>问题三有头绪了呢....</p>
+<h3 id="非法情况判断">非法情况判断</h3>
+<p>通过如上方案，我们将五个数初始化为-1,</p>
+<p>如果格式输入后有-1，那<strong>格式有误</strong>，非法。</p>
+<p>参考代码：</p>
+<pre><code class="language-cpp">a=-1,b=-1,c=-1,d=-1,e=-1; 
+cin&gt;&gt;s;
+scanf(&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e);
+if(a==-1||b==-1||c==-1||d==-1||e==-1)
+{
+  cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+  continue;
+}
+</code></pre>
+<p>同样的，判断数字是否超出范围：</p>
+<pre><code class="language-cpp">if(a&gt;255||b&gt;255||c&gt;255||d&gt;255||e&gt;65535)
+{
+ cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+ continue;			
+}
+</code></pre>
+<p>你可能会问，如果输入了一个巨大的数，</p>
+<p><strong>long long溢出，怎么办？</strong></p>
+<p>别急，我们往下看。</p>
+<p>前导零问题如何解决？？</p>
+<p>我们想想，因为前导零被变量“吃”了，</p>
+<p><strong>现在的字符串一定比之前的字符串短</strong>，</p>
+<p>我们判断即可。</p>
+<p>怎么<strong>存下之前的字符串</strong>？</p>
+<p>使用<code>sscanf</code></p>
+<p><code>sscanf</code>不同于<code>scanf</code>,它需要多一个字符串参数</p>
+<p>相当于用scanf将<strong>字符串内容读了一遍</strong>，</p>
+<p>读入效果与<code>scanf</code>一样</p>
+<p>这样，我们先读入一个字符串，</p>
+<p>然后<code>sscanf</code>读入，</p>
+<p>这样两个结果都存了下来，</p>
+<p>鱼和熊掌的兼得。</p>
+<pre><code class="language-cpp">a=-1,b=-1,c=-1,d=-1,e=-1; 
+cin&gt;&gt;s;
+cin&gt;&gt;cc;//sscanf的妙用
+sscanf(cc,&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e);
+if(a==-1||b==-1||c==-1||d==-1||e==-1)
+{
+	cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+	continue;
+}
+if(a&gt;255||b&gt;255||c&gt;255||d&gt;255||e&gt;65535)
+{
+	cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+	continue;			
+}
+if(len(a)+len(b)+len(c)+len(d)+len(e)+4!=strlen(cc))
+{//len是一个判断数字长度的自定义函数
+//+4是四个标点符号
+	cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+	continue;			
+}
+</code></pre>
+<p>其实，非法情况就都可以判走了，</p>
+<p>因为</p>
+<ul>
+<li>前导零、整数超出、格式错误被判掉。</li>
+<li>多个数字显然长度不等。</li>
+<li>long long 溢出，长度变小了。</li>
+</ul>
+<p>好了，这道题其实不难，重点在<strong>函数使用的基本功</strong>。</p>
+<h2 id="参考代码">参考代码</h2>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+map&lt;long long,int&gt; m;
+int n,a,b,c,d,e;
+string s,s2;
+char cc[105];
+int len(int x)
+{
+	if(x==0)return 1;
+	int ans=0;
+	while(x)
+	{
+		ans++;
+		x/=10;
+	} 
+	return ans;
+} 
+int main()
+{
+	cin&gt;&gt;n;
+	for(int T=1;T&lt;=n;T++)
+	{
+		a=-1,b=-1,c=-1,d=-1,e=-1; 
+		cin&gt;&gt;s;
+		cin&gt;&gt;cc;
+		sscanf(cc,&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e);
+		if(a==-1||b==-1||c==-1||d==-1||e==-1)
+		{
+			cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+			continue;
+		}
+		if(a&gt;255||b&gt;255||c&gt;255||d&gt;255||e&gt;65535)
+		{
+			cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+			continue;			
+		}
+		if(len(a)+len(b)+len(c)+len(d)+len(e)+4!=strlen(cc))
+		{
+			cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+			continue;			
+		}
+		long long sum=0;
+		sum+=a;
+		sum*=1000;
+		sum+=b;
+		sum*=1000;
+		sum+=c;
+		sum*=1000;
+		sum+=d;
+		sum*=100000;
+		sum+=e;
+		if(s==&quot;Server&quot;)
+		{
+			if(m[-sum])
+			{
+				cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+				continue; 
+			}
+			m[-sum]=T;
+			cout&lt;&lt;&quot;OK&quot;&lt;&lt;endl;
+		} 
+		else
+		{
+			if(!m[-sum])
+			{
+				cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+				continue; 
+			}
+			cout&lt;&lt;m[-sum]&lt;&lt;endl;		
+		}
+	}	
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021年9月20日模拟赛总结]]></title>
         <id>https://Deng-Duck.github.io/post/20210920/</id>

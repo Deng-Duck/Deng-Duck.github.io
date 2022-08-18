@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>2021CSP-J网络连接题解 | DengDuck&#39;s Blog</title>
+<meta name="description" content="感谢大家支持DuckOI">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660865882198">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://Deng-Duck.github.io">DengDuck&#39;s Blog</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>2021CSP-J网络连接题解</h1>
+            <p class="article-meta">
+              2022-08-18
+              
+            </p>
+            
+              <img src="https://s1.ax1x.com/2022/08/18/vruY9A.jpg" alt="2021CSP-J网络连接题解">
+            
+            <div class="post-content">
+              <h2 id="题目链接"><a href="https://www.luogu.com.cn/problem/P7911">题目链接</a></h2>
+<h2 id="题目分析">题目分析</h2>
+<p>map不会冲突！！不一定要like代码中那样加-号！</p>
+<p>模拟，算不上大,</p>
+<p>首先，我们想想整个流程:</p>
+<figure data-type="image" tabindex="1"><img src="https://img2020.cnblogs.com/blog/2478902/202110/2478902-20211031104143152-1577903473.png" alt="" loading="lazy"></figure>
+<p>现在，我们找出难点，逐个瓦解:</p>
+<ul>
+<li>读入提取数 MIDDLE</li>
+<li>非法情况判断 HARD</li>
+<li>是否重复 EASY</li>
+</ul>
+<p>从简到难解决。</p>
+<h3 id="是否重复">是否重复</h3>
+<p>首先，将5个数字<strong>按次序组合成一个大数</strong>，</p>
+<p>本人测试：25525525525565535是<strong>long long</strong>存的下的，</p>
+<p>然后map搞定。</p>
+<p>就解决了，参考代码：</p>
+<pre><code class="language-cpp">long long sum=0;
+sum+=a;
+sum*=1000;
+sum+=b;
+sum*=1000;
+sum+=c;
+sum*=1000;
+sum+=d;
+sum*=100000;
+sum+=e;//转换
+if(s==&quot;Server&quot;)
+{
+	if(m[-sum])
+	{
+		cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+		continue; 
+	}
+	m[-sum]=T;//记录这个服务机的编号，后边客户机要用
+	cout&lt;&lt;&quot;OK&quot;&lt;&lt;endl;
+} 
+else
+{
+	if(!m[-sum])
+	{
+		cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+		continue; 
+	}
+	cout&lt;&lt;m[-sum]&lt;&lt;endl;//输出服务机的编号
+}
+</code></pre>
+<h3 id="读入提取数">读入提取数</h3>
+<p>怎么提取数字呢?</p>
+<p>其实也不难,</p>
+<p>scanf支持<strong>格式输入</strong>,</p>
+<p>如<br>
+<code>scanf(&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e)</code></p>
+<p>输入</p>
+<pre><code class="language-latex">1.1.1.1:1
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>b</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>c</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>d</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>e</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=1,b=1,c=1,d=1,e=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></p>
+<p>如果不按格式？</p>
+<pre><code class="language-latex">1:1:1:1.1
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mi>b</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mi>c</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mi>d</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mi>e</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=1,b=0,c=0,d=0,e=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></p>
+<p><strong>What?不按格式的部分值没有变化？</strong></p>
+<p>问题三有头绪了呢....</p>
+<h3 id="非法情况判断">非法情况判断</h3>
+<p>通过如上方案，我们将五个数初始化为-1,</p>
+<p>如果格式输入后有-1，那<strong>格式有误</strong>，非法。</p>
+<p>参考代码：</p>
+<pre><code class="language-cpp">a=-1,b=-1,c=-1,d=-1,e=-1; 
+cin&gt;&gt;s;
+scanf(&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e);
+if(a==-1||b==-1||c==-1||d==-1||e==-1)
+{
+  cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+  continue;
+}
+</code></pre>
+<p>同样的，判断数字是否超出范围：</p>
+<pre><code class="language-cpp">if(a&gt;255||b&gt;255||c&gt;255||d&gt;255||e&gt;65535)
+{
+ cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+ continue;			
+}
+</code></pre>
+<p>你可能会问，如果输入了一个巨大的数，</p>
+<p><strong>long long溢出，怎么办？</strong></p>
+<p>别急，我们往下看。</p>
+<p>前导零问题如何解决？？</p>
+<p>我们想想，因为前导零被变量“吃”了，</p>
+<p><strong>现在的字符串一定比之前的字符串短</strong>，</p>
+<p>我们判断即可。</p>
+<p>怎么<strong>存下之前的字符串</strong>？</p>
+<p>使用<code>sscanf</code></p>
+<p><code>sscanf</code>不同于<code>scanf</code>,它需要多一个字符串参数</p>
+<p>相当于用scanf将<strong>字符串内容读了一遍</strong>，</p>
+<p>读入效果与<code>scanf</code>一样</p>
+<p>这样，我们先读入一个字符串，</p>
+<p>然后<code>sscanf</code>读入，</p>
+<p>这样两个结果都存了下来，</p>
+<p>鱼和熊掌的兼得。</p>
+<pre><code class="language-cpp">a=-1,b=-1,c=-1,d=-1,e=-1; 
+cin&gt;&gt;s;
+cin&gt;&gt;cc;//sscanf的妙用
+sscanf(cc,&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e);
+if(a==-1||b==-1||c==-1||d==-1||e==-1)
+{
+	cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+	continue;
+}
+if(a&gt;255||b&gt;255||c&gt;255||d&gt;255||e&gt;65535)
+{
+	cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+	continue;			
+}
+if(len(a)+len(b)+len(c)+len(d)+len(e)+4!=strlen(cc))
+{//len是一个判断数字长度的自定义函数
+//+4是四个标点符号
+	cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+	continue;			
+}
+</code></pre>
+<p>其实，非法情况就都可以判走了，</p>
+<p>因为</p>
+<ul>
+<li>前导零、整数超出、格式错误被判掉。</li>
+<li>多个数字显然长度不等。</li>
+<li>long long 溢出，长度变小了。</li>
+</ul>
+<p>好了，这道题其实不难，重点在<strong>函数使用的基本功</strong>。</p>
+<h2 id="参考代码">参考代码</h2>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+map&lt;long long,int&gt; m;
+int n,a,b,c,d,e;
+string s,s2;
+char cc[105];
+int len(int x)
+{
+	if(x==0)return 1;
+	int ans=0;
+	while(x)
+	{
+		ans++;
+		x/=10;
+	} 
+	return ans;
+} 
+int main()
+{
+	cin&gt;&gt;n;
+	for(int T=1;T&lt;=n;T++)
+	{
+		a=-1,b=-1,c=-1,d=-1,e=-1; 
+		cin&gt;&gt;s;
+		cin&gt;&gt;cc;
+		sscanf(cc,&quot;%d.%d.%d.%d:%d&quot;,&amp;a,&amp;b,&amp;c,&amp;d,&amp;e);
+		if(a==-1||b==-1||c==-1||d==-1||e==-1)
+		{
+			cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+			continue;
+		}
+		if(a&gt;255||b&gt;255||c&gt;255||d&gt;255||e&gt;65535)
+		{
+			cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+			continue;			
+		}
+		if(len(a)+len(b)+len(c)+len(d)+len(e)+4!=strlen(cc))
+		{
+			cout&lt;&lt;&quot;ERR&quot;&lt;&lt;endl;
+			continue;			
+		}
+		long long sum=0;
+		sum+=a;
+		sum*=1000;
+		sum+=b;
+		sum*=1000;
+		sum+=c;
+		sum*=1000;
+		sum+=d;
+		sum*=100000;
+		sum+=e;
+		if(s==&quot;Server&quot;)
+		{
+			if(m[-sum])
+			{
+				cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+				continue; 
+			}
+			m[-sum]=T;
+			cout&lt;&lt;&quot;OK&quot;&lt;&lt;endl;
+		} 
+		else
+		{
+			if(!m[-sum])
+			{
+				cout&lt;&lt;&quot;FAIL&quot;&lt;&lt;endl;
+				continue; 
+			}
+			cout&lt;&lt;m[-sum]&lt;&lt;endl;		
+		}
+	}	
+}
+</code></pre>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://Deng-Duck.github.io/post/20210920/">
+                <h3 class="post-title">
+                  2021年9月20日模拟赛总结
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660865882198" class="no-responsive avatar">
+    <div class="text-muted">感谢大家支持DuckOI</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://Deng-Duck.github.io/post/SixSixSix/">六神教徒戒条</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/">2021CSP-J网络连接题解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://Deng-Duck.github.io/post/20210920/">2021年9月20日模拟赛总结</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://Deng-Duck.github.io/post/about/">关于我</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://Deng-Duck.github.io/post/he-bing-shi-zi-san-jiang/">合并石子三讲</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://Deng-Duck.github.io/tag/Think/" class="badge ">
+          浅显思考
+        </a>
+      
+        <a href="https://Deng-Duck.github.io/tag/Contest/" class="badge secondary">
+          比赛总结
+        </a>
+      
+        <a href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="badge secondary">
+          Gridea
+        </a>
+      
+        <a href="https://Deng-Duck.github.io/tag/Answer/" class="badge secondary">
+          题目解法
+        </a>
+      
+        <a href="https://Deng-Duck.github.io/tag/Algorithm/" class="badge success">
+          算法总结
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '0b9d02ba11c879947681',
+        clientSecret: '46a1e446e3f04c37e7a17c88e62197a7378254a4',
+        repo: 'gitalk',
+        owner: 'deng-duck',
+        admin: ['deng-duck'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>随便做做NOI ONLINE | DengDuck&#39;s Blog</title>
+<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660871192480">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="随便做做NOI ONLINE | DengDuck&#39;s Blog - Atom Feed" href="https://Deng-Duck.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="NOI ONLINE之前临时抱佛脚
+
+好耶！洛谷账号橙了！
+水题
+[NOI Online #2 入门组] 未了
+这就是一道贪心+二分查找,思路很好想
+除法有精度问题，建议不使用除法
+code
+[NOI Online #3 提高组] 水壶
+不..." />
+    <meta name="keywords" content="题目解法" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Deng-Duck.github.io">
+  <img class="avatar" src="https://Deng-Duck.github.io/images/avatar.png?v=1660871192480" alt="">
+  </a>
+  <h1 class="site-title">
+    DengDuck&#39;s Blog
+  </h1>
+  <p class="site-description">
+    感谢大家支持DuckOI
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              随便做做NOI ONLINE
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-03-29
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://Deng-Duck.github.io/tag/Answer/" class="post-tag">
+                  # 题目解法
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://s1.ax1x.com/2022/08/19/vrYWRO.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>NOI ONLINE之前临时抱佛脚</p>
+<!-- more -->
+<p>好耶！洛谷账号橙了！</p>
+<h1 id="水题">水题</h1>
+<h2 id="noi-online-2-入门组-未了">[NOI Online #2 入门组] 未了</h2>
+<p>这就是一道<code>贪心+二分查找</code>,思路很好想</p>
+<p>除法有精度问题，建议不使用除法</p>
+<p><a href="https://www.luogu.com.cn/record/71911099">code</a></p>
+<h2 id="noi-online-3-提高组-水壶">[NOI Online #3 提高组] 水壶</h2>
+<p>不难发现最优解一定是一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">m+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">m</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>大的区间，问题变成静态区间和</p>
+<p>轻轻松松<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>解决</p>
+<p><a href="https://www.luogu.com.cn/record/72022727">code</a></p>
+<h2 id="noi-online-3-入门组-最急救助">[NOI Online #3 入门组] 最急救助</h2>
+<p>字符串水题，直接一个一个字符看（顺便看后两个）</p>
+<p>模拟的时间复杂度只有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></p>
+<p><s>其实可以加强成KMP的题</s></p>
+<p><a href="https://www.luogu.com.cn/record/72024826">code</a></p>
+<h2 id="noi-online-1-入门组-文具订购">[NOI Online #1 入门组] 文具订购</h2>
+<p>首次提交只有85，这个水题竟然有坑，奇耻大辱！</p>
+<p>首先应该枚举什么？套数，3元，和4元，为什么？枚举套数快，然后为了买的更多，先枚举3元的</p>
+<p>然后倒着枚举，这样第一次求出的就是最优解</p>
+<p><a href="https://www.luogu.com.cn/record/72029169">code</a></p>
+<h2 id="noi-online-3-入门组-观星">[NOI Online #3 入门组] 观星</h2>
+<p>先整理星座，然后用一个桶（建议加一个<code>set</code>）存储，最后整理星系，输出</p>
+<p>就是一道<code>dfs+模拟</code>，其实本质是一道普及题加上一个普及题（两个部分），但是细节很恶心,容易打错 <s>（<code>xuxiaobin</code>也这么认为）</s></p>
+<p><a href="https://www.luogu.com.cn/record/72095520">code</a></p>
+<h1 id="较难题">较难题</h1>
+<h2 id="noi-online-2021-入门组-切蛋糕">[NOI Online 2021 入门组] 切蛋糕</h2>
+<p>NOI Online 2021 入门组我其实参加了，但是那时我还是个蒟蒻（现在也是）</p>
+<p>当时是拿了100分，也就是只Accepted了本题</p>
+<p>本题是一道分类讨论，有一定思维难度，一个一个情况找就对了</p>
+<p><a href="https://www.luogu.com.cn/record/48898793">code</a></p>
+<h2 id="noi-online-3-入门组-买表">[NOI Online #3 入门组] 买表</h2>
+<p>读完题很容易发现是多重背包</p>
+<p>考虑到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>k</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">k_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 很大，要用二进制优化</p>
+<p>就当复习了</p>
+<p><a href="https://www.luogu.com.cn/record/72169108">code</a></p>
+<h2 id="noi-online-2-提高组-涂色游戏">[NOI Online #2 提高组] 涂色游戏</h2>
+<p>一道数学题，一开始没管互质只有40分，后来重推+卡常才Accepted</p>
+<p><a href="https://www.luogu.com.cn/record/72173165">code</a></p>
+<h1 id="变态题">变态题</h1>
+<h2 id="noi-online-1-入门组-魔法">[NOI Online #1 入门组] 魔法</h2>
+<p>这是入门组的题？！！</p>
+<p>一开始打了一个变形SPFA，但是无法保存魔法，只能使用一次，只拿到50分</p>
+<p>正解是矩阵快速幂优化动态规划，我直接放弃，不做了</p>
+<p><a href="https://www.luogu.com.cn/record/72232345">50pts code</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%B0%B4%E9%A2%98">水题</a>
+<ul>
+<li><a href="#noi-online-2-%E5%85%A5%E9%97%A8%E7%BB%84-%E6%9C%AA%E4%BA%86">[NOI Online #2 入门组] 未了</a></li>
+<li><a href="#noi-online-3-%E6%8F%90%E9%AB%98%E7%BB%84-%E6%B0%B4%E5%A3%B6">[NOI Online #3 提高组] 水壶</a></li>
+<li><a href="#noi-online-3-%E5%85%A5%E9%97%A8%E7%BB%84-%E6%9C%80%E6%80%A5%E6%95%91%E5%8A%A9">[NOI Online #3 入门组] 最急救助</a></li>
+<li><a href="#noi-online-1-%E5%85%A5%E9%97%A8%E7%BB%84-%E6%96%87%E5%85%B7%E8%AE%A2%E8%B4%AD">[NOI Online #1 入门组] 文具订购</a></li>
+<li><a href="#noi-online-3-%E5%85%A5%E9%97%A8%E7%BB%84-%E8%A7%82%E6%98%9F">[NOI Online #3 入门组] 观星</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BE%83%E9%9A%BE%E9%A2%98">较难题</a>
+<ul>
+<li><a href="#noi-online-2021-%E5%85%A5%E9%97%A8%E7%BB%84-%E5%88%87%E8%9B%8B%E7%B3%95">[NOI Online 2021 入门组] 切蛋糕</a></li>
+<li><a href="#noi-online-3-%E5%85%A5%E9%97%A8%E7%BB%84-%E4%B9%B0%E8%A1%A8">[NOI Online #3 入门组] 买表</a></li>
+<li><a href="#noi-online-2-%E6%8F%90%E9%AB%98%E7%BB%84-%E6%B6%82%E8%89%B2%E6%B8%B8%E6%88%8F">[NOI Online #2 提高组] 涂色游戏</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8F%98%E6%80%81%E9%A2%98">变态题</a>
+<ul>
+<li><a href="#noi-online-1-%E5%85%A5%E9%97%A8%E7%BB%84-%E9%AD%94%E6%B3%95">[NOI Online #1 入门组] 魔法</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://Deng-Duck.github.io/post/20220303/">
+              <h3 class="post-title">
+                2022年3月3日模拟赛总结
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '0b9d02ba11c879947681',
+    clientSecret: '46a1e446e3f04c37e7a17c88e62197a7378254a4',
+    repo: 'gitalk',
+    owner: 'deng-duck',
+    admin: ['deng-duck'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  非常好博客，爱来自鸭子！
+希望大家喜欢我的博客和DuckOI
+本博客使用 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>搭建
+  <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

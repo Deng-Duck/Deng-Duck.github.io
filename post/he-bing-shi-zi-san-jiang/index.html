@@ -1,114 +1,135 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>合并石子三讲 | DengDuck&#39;s Blog</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660867506237">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    合并石子三讲 | DengDuck&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660869530271">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://Deng-Duck.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
 
-  
+                    
+                            
+</head>
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="题目大意：
-
-设有 NNN 堆石子排成一排，其编号为 1，2，3，…，N1，2，3，…，N1，2，3，…，N
-每堆石子有一定的质量，可以用一个整数来描述
-现在要将这 NNN 堆石子合并成为一堆，每次只能合并相邻的两堆
-合并的代价为这两堆石子..." />
-    <meta name="keywords" content="题目解法,算法总结" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://Deng-Duck.github.io">
-        <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660867506237" class="site-logo">
-        <h1 class="site-title">DengDuck&#39;s Blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://Deng-Duck.github.io">
+                <img class="avatar" src="https://Deng-Duck.github.io/images/avatar.png?v=1660869530271" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    DengDuck&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      感谢大家支持DuckOI
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
 </div>
 
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">合并石子三讲</h2>
-            <div class="post-date">2021-09-05</div>
-            
-              <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2022/08/18/vrnXkQ.jpg')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <h2 id="题目大意">题目大意：</h2>
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            合并石子三讲
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2021-09-05</time>
+                            
+                                <a href="https://Deng-Duck.github.io/tag/Answer/" class="post-tag i-tag
+                            i-tag-other_2">
+                            #题目解法
+                        </a>
+                                
+                                <a href="https://Deng-Duck.github.io/tag/Algorithm/" class="post-tag i-tag
+                            i-tag-other_3">
+                            #算法总结
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2022/08/18/vrnXkQ.jpg')"></div>
+                            
+                                <div class="post-content">
+                                    <p>本文讲介绍关于合并石子的做法：</p>
+<p>区间DP，记忆化搜索和四边形不等式优化</p>
+<!-- more -->
+<h2 id="题目大意">题目大意：</h2>
 <blockquote>
 <p>设有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 堆石子排成一排，其编号为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">，</mi><mn>2</mn><mi mathvariant="normal">，</mi><mn>3</mn><mi mathvariant="normal">，</mi><mo>…</mo><mi mathvariant="normal">，</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">1，2，3，…，N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord cjk_fallback">，</span><span class="mord">2</span><span class="mord cjk_fallback">，</span><span class="mord">3</span><span class="mord cjk_fallback">，</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">，</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span></p>
 <p>每堆石子有一定的质量，可以用一个整数来描述</p>
@@ -604,77 +625,126 @@ int main()
 }
 </code></pre>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://Deng-Duck.github.io/tag/Answer/" class="tag">
-                    题目解法
-                  </a>
-                
-                  <a href="https://Deng-Duck.github.io/tag/Algorithm/" class="tag">
-                    算法总结
-                  </a>
-                
-              </div>
-            
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F">题目大意：</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%8A%E4%BB%A3%E7%A0%81"><strong>上代码！</strong></a>
+<ul>
+<li><a href="#%E6%B5%85%E8%B0%88%E8%AE%B0%E5%BF%86%E5%8C%96">浅谈记忆化：</a>
+<ul>
+<li><a href="#%E5%AE%83%E7%9A%84%E6%80%9D%E8%B7%AF%E6%98%AF">它的思路是：</a></li>
+<li><a href="#%E5%AE%83%E7%9A%84%E6%A1%86%E6%9E%B6%E6%98%AF">它的框架是：</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3">代码详解：</a>
+<ul>
+<li><a href="#%E8%BE%93%E5%85%A5%E5%88%9D%E5%A7%8B%E5%8C%96">输入，初始化</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%8A%E4%BB%A3%E7%A0%81-2">上代码：</a></li>
+<li><a href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F-2">题目大意：</a></li>
+<li><a href="#%E7%9F%A5%E8%AF%86%E8%AE%B2%E8%A7%A3">知识讲解：</a></li>
+<li><a href="#%E9%A2%98%E7%9B%AE%E8%AF%A6%E8%A7%A3">题目详解：</a></li>
+<li><a href="#%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3-2">代码详解：</a></li>
+<li><a href="#%E4%B8%8A%E4%BB%A3%E7%A0%81-3">上代码：</a></li>
+</ul>
+</li>
+</ul>
 
         </div>
-      </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
+    
+                            
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+                </div>
 
-AOS.init();
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
 
-
-
-
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    </div>
     <script>
-
-      var gitalk = new Gitalk({
-        clientID: '0b9d02ba11c879947681',
-        clientSecret: '46a1e446e3f04c37e7a17c88e62197a7378254a4',
-        repo: 'gitalk',
-        owner: 'deng-duck',
-        admin: ['deng-duck'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
     </script>
-  
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '0b9d02ba11c879947681',
+            clientSecret: '46a1e446e3f04c37e7a17c88e62197a7378254a4',
+            repo: 'gitalk',
+            owner: 'deng-duck',
+            admin: ['deng-duck'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
 
-  
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
 
+                    
+                                
+</body>
 
-
-
-  </body>
 </html>

@@ -1,125 +1,200 @@
 <html>
-  <head>
-  <meta charset="utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea | DengDuck&#39;s Blog</title>
-<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660871192480">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<title>
+    Gridea | DengDuck&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660872070039">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea | DengDuck&#39;s Blog - Atom Feed" href="https://Deng-Duck.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://Deng-Duck.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+</head>
 
-  <meta name="description" content="感谢大家支持DuckOI" />
-  </head>
-  <body>
+<body>
     <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://Deng-Duck.github.io">
-  <img class="avatar" src="https://Deng-Duck.github.io/images/avatar.png?v=1660871192480" alt="">
-  </a>
-  <h1 class="site-title">
-    DengDuck&#39;s Blog
-  </h1>
-  <p class="site-description">
-    感谢大家支持DuckOI
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://Deng-Duck.github.io">
+                <img class="avatar" src="https://Deng-Duck.github.io/images/avatar.png?v=1660872070039" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    DengDuck&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
 </div>
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：# Gridea
-            </h2> 
-        </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://Deng-Duck.github.io/post/about/">
-        <h2 class="post-title">关于我</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2022-08-18
-        </span>
-        <span>
-          1 min read
-        </span>
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        Gridea</b>
+    </div>
+    
         
-          <a href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="post-tag">
-            # Gridea
-          </a>
-        
-      </div>
-      
-        <a href="https://Deng-Duck.github.io/post/about/" class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2022/08/18/vrnZsf.jpg')">
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://Deng-Duck.github.io/post/about/">
+                        关于我
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2022-08-18</time>
+                    
+                        <a href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="post-tag i-tag
+                            i-tag-other_3">
+            #Gridea
         </a>
-      
-      <div class="post-abstract">
-        <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://Deng-Duck.github.io/post/about/" class="post-feature-image" style="background-image:url(https://s1.ax1x.com/2022/08/18/vrnZsf.jpg) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
 <p>来认识一下我吧😆</p>
 
-      </div>
-    </article>
-  
-</div>
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://Deng-Duck.github.io/post/about/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
 
-        <div class="pagination-container">
-  
-  
-</div>
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://Deng-Duck.github.io/images/avatar.png?v=1660872070039)">
+        </div>
+        <h1 class="id_card-title">
+            DengDuck&#39;s Blog
+        </h1>
+        <h2 class="id_card-description">
+            感谢大家支持DuckOI
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
 
-        <div class="site-footer">
+        </div>
+    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
   非常好博客，爱来自鸭子！
 希望大家喜欢我的博客和DuckOI
-本博客使用 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>搭建
-  <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+本博客使用 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>搭建 | 
+  <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
     </div>
-  </body>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
+
 </html>

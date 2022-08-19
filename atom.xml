@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Deng-Duck.github.io</id>
     <title>DengDuck&apos;s Blog</title>
-    <updated>2022-08-19T12:33:35.488Z</updated>
+    <updated>2022-08-19T12:59:02.539Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Deng-Duck.github.io"/>
     <link rel="self" href="https://Deng-Duck.github.io/atom.xml"/>
@@ -11,11 +11,48 @@
     <icon>https://Deng-Duck.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, DengDuck&apos;s Blog</rights>
     <entry>
+        <title type="html"><![CDATA[关于我]]></title>
+        <id>https://Deng-Duck.github.io/post/about/</id>
+        <link href="https://Deng-Duck.github.io/post/about/">
+        </link>
+        <updated>2022-08-18T11:09:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+<p>来认识一下我吧😆</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+<p>来认识一下我吧😆</p>
+<!-- more -->
+<h2 id="关于本站">🏠 关于本站</h2>
+<p><a href="https://www.cnblogs.com/I-am-joker/">我的博客园</a></p>
+<p>本博客是我的新博客，以后只要使用本博客</p>
+<p>优质的旧博客应该会放上来</p>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>我是一个广东中山的蒟蒻</p>
+<p>生日是2008年10月31日</p>
+<p>我很喜欢思维题，是DuckOI的创始人</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>我喜欢二次元，喜欢周杰伦和初音未来</p>
+<p>喜欢音乐游戏，玩《Malody》《MaiMai》《舞立方》</p>
+<p>喜欢 LoveLive ，但碍于实名认证，不玩游戏</p>
+<p>所有实名认证的游戏都不玩</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>欢迎一起交流！也可以找我们咨询合作！</p>
+<ul>
+<li><strong>微信</strong> <code>DengDuckzs</code>（推荐）</li>
+<li><strong>洛谷</strong> <code>DengDuck</code> <strong>私信</strong>（推荐）</li>
+<li><strong>邮箱</strong> <code>moudengya123@qq.com</code></li>
+<li><strong>Bilibili</strong> <strong>某邓吖</strong> <strong>私信</strong><br>
+也可以在下面留言<br>
+<s>(Gitalk不稳定QAQ)</s></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2022年8月12日模拟赛总结]]></title>
         <id>https://Deng-Duck.github.io/post/2022-nian-8-yue-12-ri-mo-ni-sai-zong-jie/</id>
         <link href="https://Deng-Duck.github.io/post/2022-nian-8-yue-12-ri-mo-ni-sai-zong-jie/">
         </link>
-        <updated>2022-08-19T12:22:05.000Z</updated>
+        <updated>2022-08-12T12:22:05.000Z</updated>
         <summary type="html"><![CDATA[<p>今天抽出一点时间写总结，最近真的超级忙.....下午要补昨天咕咕的补题</p>
 <p>大概是我暑假唯一的博客吧....</p>
 ]]></summary>
@@ -199,43 +236,6 @@ int main() {
 <p>其实我的代码很累赘，大家理解思路，不要照着打</p>
 <p>结果第一是YWJ？CZN后来又交了一次</p>
 <!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于我]]></title>
-        <id>https://Deng-Duck.github.io/post/about/</id>
-        <link href="https://Deng-Duck.github.io/post/about/">
-        </link>
-        <updated>2022-08-18T11:09:48.000Z</updated>
-        <summary type="html"><![CDATA[<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-<p>来认识一下我吧😆</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-<p>来认识一下我吧😆</p>
-<!-- more -->
-<h2 id="关于本站">🏠 关于本站</h2>
-<p><a href="https://www.cnblogs.com/I-am-joker/">我的博客园</a></p>
-<p>本博客是我的新博客，以后只要使用本博客</p>
-<p>优质的旧博客应该会放上来</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>我是一个广东中山的蒟蒻</p>
-<p>生日是2008年10月31日</p>
-<p>我很喜欢思维题，是DuckOI的创始人</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>我喜欢二次元，喜欢周杰伦和初音未来</p>
-<p>喜欢音乐游戏，玩《Malody》《MaiMai》《舞立方》</p>
-<p>喜欢 LoveLive ，但碍于实名认证，不玩游戏</p>
-<p>所有实名认证的游戏都不玩</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>欢迎一起交流！也可以找我们咨询合作！</p>
-<ul>
-<li><strong>微信</strong> <code>DengDuckzs</code>（推荐）</li>
-<li><strong>洛谷</strong> <code>DengDuck</code> <strong>私信</strong>（推荐）</li>
-<li><strong>邮箱</strong> <code>moudengya123@qq.com</code></li>
-<li><strong>Bilibili</strong> <strong>某邓吖</strong> <strong>私信</strong><br>
-也可以在下面留言<br>
-<s>(Gitalk不稳定QAQ)</s></li>
-</ul>
 ]]></content>
     </entry>
     <entry>

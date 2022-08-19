@@ -4,14 +4,11 @@
     <meta charset="utf-8" >
 
 <title>合并石子三讲 | DengDuck&#39;s Blog</title>
-<meta name="description" content="感谢大家支持DuckOI">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660867196139">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660867506237">
 <link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
 
 
@@ -21,89 +18,96 @@
 
   
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="题目大意：
+
+设有 NNN 堆石子排成一排，其编号为 1，2，3，…，N1，2，3，…，N1，2，3，…，N
+每堆石子有一定的质量，可以用一个整数来描述
+现在要将这 NNN 堆石子合并成为一堆，每次只能合并相邻的两堆
+合并的代价为这两堆石子..." />
+    <meta name="keywords" content="题目解法,算法总结" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://Deng-Duck.github.io">DengDuck&#39;s Blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Deng-Duck.github.io">
+        <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660867506237" class="site-logo">
+        <h1 class="site-title">DengDuck&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      感谢大家支持DuckOI
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>合并石子三讲</h1>
-            <p class="article-meta">
-              2021-09-05
-              
-                <a href="https://Deng-Duck.github.io/tag/Answer/" class="badge success">
-                  题目解法
-                </a>
-              
-                <a href="https://Deng-Duck.github.io/tag/Algorithm/" class="badge success">
-                  算法总结
-                </a>
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">合并石子三讲</h2>
+            <div class="post-date">2021-09-05</div>
             
-              <img src="https://s1.ax1x.com/2022/08/18/vrnXkQ.jpg" alt="合并石子三讲">
+              <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2022/08/18/vrnXkQ.jpg')">
+              </div>
             
-            <div class="post-content">
+            <div class="post-content" v-pre>
               <h2 id="题目大意">题目大意：</h2>
 <blockquote>
 <p>设有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 堆石子排成一排，其编号为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">，</mi><mn>2</mn><mi mathvariant="normal">，</mi><mn>3</mn><mi mathvariant="normal">，</mi><mo>…</mo><mi mathvariant="normal">，</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">1，2，3，…，N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord cjk_fallback">，</span><span class="mord">2</span><span class="mord cjk_fallback">，</span><span class="mord">3</span><span class="mord cjk_fallback">，</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">，</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span></p>
@@ -601,125 +605,50 @@ int main()
 </code></pre>
 
             </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
-        
-          
-            <div class="paper" data-aos="fade-in">
-              <div id="gitalk-container"></div>
-            </div>
-          
+            
+              <div class="tag-container">
+                
+                  <a href="https://Deng-Duck.github.io/tag/Answer/" class="tag">
+                    题目解法
+                  </a>
+                
+                  <a href="https://Deng-Duck.github.io/tag/Algorithm/" class="tag">
+                    算法总结
+                  </a>
+                
+              </div>
+            
+            
 
-          
-        
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660867196139" class="no-responsive avatar">
-    <div class="text-muted">感谢大家支持DuckOI</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/SixSixSix/">六神教徒戒条</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/">2021CSP-J网络连接题解</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/20210920/">2021年9月20日模拟赛总结</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/about/">关于我</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/he-bing-shi-zi-san-jiang/">合并石子三讲</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://Deng-Duck.github.io/tag/Think/" class="badge warning">
-          浅显思考
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/Contest/" class="badge secondary">
-          比赛总结
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="badge secondary">
-          Gridea
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/Answer/" class="badge ">
-          题目解法
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/Algorithm/" class="badge secondary">
-          算法总结
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 

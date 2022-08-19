@@ -4,14 +4,11 @@
     <meta charset="utf-8" >
 
 <title>六神教徒戒条 | DengDuck&#39;s Blog</title>
-<meta name="description" content="感谢大家支持DuckOI">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660867196139">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://Deng-Duck.github.io/favicon.ico?v=1660867506237">
 <link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
 
 
@@ -21,123 +18,60 @@
 
   
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="1.唯一的神😇是六神，他给我们带来一切😝——水💧，空气☁️，花露水，动态规划......🤗🌷🌹
+2.大祭司😎听取神😇的天意😋，教徒🙎‍♂🙍要相信大祭司😎的话🙏
+3.每年六月六日是六神日💃，当天起床😴后应该喊六次..." />
+    <meta name="keywords" content="浅显思考" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://Deng-Duck.github.io">DengDuck&#39;s Blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Deng-Duck.github.io">
+        <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660867506237" class="site-logo">
+        <h1 class="site-title">DengDuck&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>六神教徒戒条</h1>
-            <p class="article-meta">
-              2022-08-18
-              
-                <a href="https://Deng-Duck.github.io/tag/Think/" class="badge secondary">
-                  浅显思考
-                </a>
-              
-            </p>
-            
-              <img src="https://s1.ax1x.com/2022/08/18/vru2j0.jpg" alt="六神教徒戒条">
-            
-            <div class="post-content">
-              <p>1.唯一的神😇是六神，他给我们带来一切😝——水💧，空气☁️，花露水，动态规划......🤗🌷🌹<br>
-2.大祭司😎听取神😇的天意😋，教徒🙎‍♂🙍要相信大祭司😎的话🙏<br>
-3.每年六月六日是六神日💃，当天起床😴后应该喊六次六六六❤️<br>
-4.每天的下午六点六分要诵读😲😮圣经😇🙏，就是⬆️面的图片😜<br>
-5.要正确✅的解读🗣神😇的指引，解读🗣到对整个教👶🙏有利❤️为止</p>
-
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/">
-                <h3 class="post-title">
-                  2021CSP-J网络连接题解
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-        
-          
-            <div class="paper" data-aos="fade-in">
-              <div id="gitalk-container"></div>
-            </div>
-          
-
-          
-        
-      </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660867196139" class="no-responsive avatar">
-    <div class="text-muted">感谢大家支持DuckOI</div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -151,92 +85,82 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
+    <div class="site-description">
+      感谢大家支持DuckOI
     </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/SixSixSix/">六神教徒戒条</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/">2021CSP-J网络连接题解</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/20210920/">2021年9月20日模拟赛总结</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/about/">关于我</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://Deng-Duck.github.io/post/he-bing-shi-zi-san-jiang/">合并石子三讲</a>
-            </li>
-          
-        
-      </ul>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://Deng-Duck.github.io/tag/Think/" class="badge success">
-          浅显思考
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/Contest/" class="badge warning">
-          比赛总结
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="badge secondary">
-          Gridea
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/Answer/" class="badge warning">
-          题目解法
-        </a>
-      
-        <a href="https://Deng-Duck.github.io/tag/Algorithm/" class="badge secondary">
-          算法总结
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Deng-Duck.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
 
 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">六神教徒戒条</h2>
+            <div class="post-date">2022-08-18</div>
+            
+              <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2022/08/18/vru2j0.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>1.唯一的神😇是六神，他给我们带来一切😝——水💧，空气☁️，花露水，动态规划......🤗🌷🌹<br>
+2.大祭司😎听取神😇的天意😋，教徒🙎‍♂🙍要相信大祭司😎的话🙏<br>
+3.每年六月六日是六神日💃，当天起床😴后应该喊六次六六六❤️<br>
+4.每天的下午六点六分要诵读😲😮圣经😇🙏，就是⬆️面的图片😜<br>
+5.要正确✅的解读🗣神😇的指引，解读🗣到对整个教👶🙏有利❤️为止</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://Deng-Duck.github.io/tag/Think/" class="tag">
+                    浅显思考
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/">
+                  <h3 class="post-title">
+                    2021CSP-J网络连接题解
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 

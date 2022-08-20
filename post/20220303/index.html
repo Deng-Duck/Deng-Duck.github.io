@@ -173,6 +173,8 @@ int n,ans,t,k;..." />
         
         
         
+        <li><a data-pjax href="https://Deng-Duck.github.io/talk" style="color:white">说说</a></li>
+        
         
           
         <li><a data-pjax href="https://Deng-Duck.github.io/friends" style="color:white">友链</a></li>
@@ -312,10 +314,10 @@ int n,ans,t,k;..." />
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660957513959" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660966602698" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
-        <span class="description" data-text='[""]'>&nbsp;</span>
+        <span class="description" data-text='["第一次访问可能卡顿，是正常现象"]'>&nbsp;</span>
         <div class="siteinfocontainer">
             <span class="siteinfo">文章</span>
             <span class="siteinfo">标签</span>
@@ -392,6 +394,12 @@ int n,ans,t,k;..." />
         
         
 
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://Deng-Duck.github.io/talk" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="说说"></i>&nbsp;<span data-text="说说">说说</span>
+            </a>
+        </div>
         
         
         
@@ -646,6 +654,12 @@ int n,ans,t,k;..." />
             </script>
         
             <script>
+                var iconname = "说说";
+                var iconurl = " https://ericamblog.oss-cn-shanghai.aliyuncs.com/2021/bb.png";
+                icondict[iconname] = iconurl;
+            </script>
+        
+            <script>
                 var iconname = "标签";
                 var iconurl = "https://ericam.top/media/images/Tag.png";
                 icondict[iconname] = iconurl;
@@ -675,7 +689,7 @@ int n,ans,t,k;..." />
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"","img":"","text":"","time":""}]');
+        var t = JSON.parse('[{"author":"Gridea","img":"","text":"这个fog主题不错","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -1156,7 +1170,7 @@ menulist.eq(i).show();
         <div class="postshow postpadding" style="padding-bottom: 0;">
             
             <div class="postdetailimg">
-                <img src="https://Deng-Duck.github.io/post-images/20220303.jpg" class="postimage" style="cursor:auto">
+                <img src="https://s1.imagehub.cc/images/2022/08/20/2233.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
                 <div class="postdate"><i class="fa fa-calendar"></i>2022-03-03</div>
@@ -1502,7 +1516,7 @@ int main()
             <a  data-pjax class="prev-post-pc" href="https://Deng-Duck.github.io/post/sui-bian-zuo-zuo-noi-online/"  style="color: black;">
                 <div id="ppcontainer">
                     
-                    <img src="https://Deng-Duck.github.io/post-images/sui-bian-zuo-zuo-noi-online.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://s1.imagehub.cc/images/2022/08/20/a8db92b1793a9bab71a4cf7b58703060.jpg" style="width: 100%;" class="opimg">
                     
                     <h4 class="optitle">随便做做NOI ONLINE</h4>
                 </div>
@@ -1515,7 +1529,7 @@ int main()
             <a data-pjax class="next-post-pc" href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/"  style="color: black;">
                 <div id="npcontainer">
                     
-                    <img src="https://Deng-Duck.github.io/post-images/2021csp-j-wang-luo-lian-jie-ti-jie.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://s1.imagehub.cc/images/2022/08/20/0dd9b72e672c3b4b3886ef8f8dd027e7.jpg" style="width: 100%;" class="opimg">
                     
                     <h4 class="optitle">2021CSP-J网络连接题解</h4>
                 </div>
@@ -1605,10 +1619,10 @@ int main()
         <!-- aplayer播放器加载👆 -->
     </div>
     <!-- 背景图加载方式👇 -->
-    <div id="bgchoice" style="display: none">default
+    <div id="bgchoice" style="display: none">link
                 </div>
                 
-                <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpeg</div>
+                <div id="bgurl" style="display:none">https://cdn.luogu.com.cn/upload/image_hosting/rangro5a.png</div>
                 
     <!-- 背景图加载方式👆 -->
 </body>
@@ -1659,7 +1673,7 @@ int main()
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = "default"
+    var bgchoice = "link"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')

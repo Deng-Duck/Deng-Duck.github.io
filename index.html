@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://Deng-Duck.github.io/styles/main.css">
     <script src="https://Deng-Duck.github.io/media/js/valine.min.js"></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-    <meta name="description" content="" />
+    <meta name="description" content="第一次访问可能卡顿，是正常现象" />
     <meta http-equiv="x-pjax-version" content="v123">
     <title>DengDuck's Blog</title>
 </head>
@@ -117,10 +117,10 @@
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660957513959" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660966602698" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
-        <span class="description" data-text='[""]'>&nbsp;</span>
+        <span class="description" data-text='["第一次访问可能卡顿，是正常现象"]'>&nbsp;</span>
         <div class="siteinfocontainer">
             <span class="siteinfo">文章</span>
             <span class="siteinfo">标签</span>
@@ -197,6 +197,12 @@
         
         
 
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://Deng-Duck.github.io/talk" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="说说"></i>&nbsp;<span data-text="说说">说说</span>
+            </a>
+        </div>
         
         
         
@@ -451,6 +457,12 @@
             </script>
         
             <script>
+                var iconname = "说说";
+                var iconurl = " https://ericamblog.oss-cn-shanghai.aliyuncs.com/2021/bb.png";
+                icondict[iconname] = iconurl;
+            </script>
+        
+            <script>
                 var iconname = "标签";
                 var iconurl = "https://ericam.top/media/images/Tag.png";
                 icondict[iconname] = iconurl;
@@ -480,7 +492,7 @@
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"","img":"","text":"","time":""}]');
+        var t = JSON.parse('[{"author":"Gridea","img":"","text":"这个fog主题不错","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -1037,6 +1049,8 @@ menulist.eq(i).show();
         
         
         
+        <li><a data-pjax href="https://Deng-Duck.github.io/talk" style="color:white">说说</a></li>
+        
         
           
         <li><a data-pjax href="https://Deng-Duck.github.io/friends" style="color:white">友链</a></li>
@@ -1085,13 +1099,13 @@ menulist.eq(i).show();
                         <!-- 移动端欢迎页 -->
 <div class="welcome">
     <div class="avatar-border">
-        <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660957513959" class="avatar">
+        <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660966602698" class="avatar">
     </div>
     <span class="mobiledescribtion"></span>
 </div>
 
 
-<div id="mobilebgurl" style="display:none">/media/images/custom-mobilebgimage.jpg</div>
+    <div id="mobilebgurl" style="display:none"></div>
 
 <script>
     var welcome = $('.welcome');
@@ -1100,7 +1114,7 @@ menulist.eq(i).show();
         bgurl = bgurl.replace("\\", "/");
     welcome.css("background", "url('" + bgurl + "')");
     var mobiledes = document.querySelector(".mobiledescribtion");
-    var text = "";
+    var text = "第一次访问可能卡顿，是正常现象";
     // 当前显示第几个字
     var mobilecharIndex = 1;
     // 每个字显示间隔默认是500毫秒
@@ -1161,7 +1175,7 @@ menulist.eq(i).show();
 </script>
                         <img src="" alt="" class="plbg">
 <script>
-    var bgchoice = "default";
+    var bgchoice = "link";
     if(bgchoice=='default')
         var plbgurl = "/media/images/custom-mobilebg.jpg"
     else  
@@ -1179,329 +1193,270 @@ menulist.eq(i).show();
 </div>
 
 
-<div id="post-container">
+    <div style="display: none;">
+        
+            
+                <span name="plfeature">https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b</span>
+                
+            <span name="pltitle">关于我</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/about/</span>
+            <span name="pldate">2022-08-18</span>
+            <span name="plstats">1 min read</span>
+            
+                <span name="pltag" alt="关于我">Gridea</span>
+                <span name="pltaglink" alt="关于我">https://Deng-Duck.github.io/tag/rNPEneU98/</span>
+            
+        
+            
+                <span name="plfeature">https://w.wallhaven.cc/full/w8/wallhaven-w8vgvq.jpg</span>
+                
+            <span name="pltitle">2022年8月12日模拟赛总结</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/2022-nian-8-yue-12-ri-mo-ni-sai-zong-jie/</span>
+            <span name="pldate">2022-08-12</span>
+            <span name="plstats">8 min read</span>
+            
+                <span name="pltag" alt="2022年8月12日模拟赛总结">比赛总结</span>
+                <span name="pltaglink" alt="2022年8月12日模拟赛总结">https://Deng-Duck.github.io/tag/Contest/</span>
+            
+        
+            
+                <span name="plfeature">https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwallpaperm.cmcm.com%2Fc9899ba117b0cff3ce98bd3ed39c3f7e.jpg&amp;refer=http%3A%2F%2Fwallpaperm.cmcm.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1663501361&amp;t=6c7f41faee22d1a323374d1463be1c3c</span>
+                
+            <span name="pltitle">浅谈倍增法求解LCA</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/qian-tan-bei-zeng-fa-qiu-jie-lca/</span>
+            <span name="pldate">2022-06-09</span>
+            <span name="plstats">23 min read</span>
+            
+                <span name="pltag" alt="浅谈倍增法求解LCA">算法总结</span>
+                <span name="pltaglink" alt="浅谈倍增法求解LCA">https://Deng-Duck.github.io/tag/Algorithm/</span>
+            
+        
+            
+                <span name="plfeature">https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F0ddace757ef68ab4d1ef7650cf949cb506e389e9.png&amp;refer=http%3A%2F%2Fi0.hdslb.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1663501361&amp;t=abb2f09dd212ee3c62af2a74c044f50c</span>
+                
+            <span name="pltitle">浅谈BSGS和EXBSGS</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/qian-tan-bsgs-he-exbsgs/</span>
+            <span name="pldate">2022-05-28</span>
+            <span name="plstats">11 min read</span>
+            
+                <span name="pltag" alt="浅谈BSGS和EXBSGS">算法总结</span>
+                <span name="pltaglink" alt="浅谈BSGS和EXBSGS">https://Deng-Duck.github.io/tag/Algorithm/</span>
+            
+        
+            
+                <span name="plfeature">https://img.tt98.com/d/2020/2020061918007893/5eec88cebaeda.jpg</span>
+                
+            <span name="pltitle">推荐三个好用的TamperMonkey洛谷插件</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/tui-jian-san-ge-hao-yong-de-tampermonkey-luo-gu-cha-jian/</span>
+            <span name="pldate">2022-05-19</span>
+            <span name="plstats">3 min read</span>
+            
+                <span name="pltag" alt="推荐三个好用的TamperMonkey洛谷插件">Gridea</span>
+                <span name="pltaglink" alt="推荐三个好用的TamperMonkey洛谷插件">https://Deng-Duck.github.io/tag/rNPEneU98/</span>
+            
+        
+            
+                <span name="plfeature">https://s1.imagehub.cc/images/2022/08/20/imagec3de7949660faad3.png</span>
+                
+            <span name="pltitle">2022广东省选普及组没的游记</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/2022-guang-dong-sheng-xuan-pu-ji-zu-mei-de-you-ji/</span>
+            <span name="pldate">2022-04-19</span>
+            <span name="plstats">9 min read</span>
+            
+                <span name="pltag" alt="2022广东省选普及组没的游记">比赛游记</span>
+                <span name="pltaglink" alt="2022广东省选普及组没的游记">https://Deng-Duck.github.io/tag/BigContest/</span>
+            
+                <span name="pltag" alt="2022广东省选普及组没的游记">比赛总结</span>
+                <span name="pltaglink" alt="2022广东省选普及组没的游记">https://Deng-Duck.github.io/tag/Contest/</span>
+            
+        
+            
+                <span name="plfeature">https://s1.imagehub.cc/images/2022/08/20/22055166a847a1a942021103d5579313.jpg</span>
+                
+            <span name="pltitle">JSOI2011分特产题解</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/jsoi2011-fen-te-chan-ti-jie/</span>
+            <span name="pldate">2022-04-14</span>
+            <span name="plstats">3 min read</span>
+            
+                <span name="pltag" alt="JSOI2011分特产题解">题目解法</span>
+                <span name="pltaglink" alt="JSOI2011分特产题解">https://Deng-Duck.github.io/tag/Answer/</span>
+            
+        
+            
+                <span name="plfeature">https://s1.imagehub.cc/images/2022/08/20/a8db92b1793a9bab71a4cf7b58703060.jpg</span>
+                
+            <span name="pltitle">随便做做NOI ONLINE</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/sui-bian-zuo-zuo-noi-online/</span>
+            <span name="pldate">2022-03-29</span>
+            <span name="plstats">3 min read</span>
+            
+                <span name="pltag" alt="随便做做NOI ONLINE">题目解法</span>
+                <span name="pltaglink" alt="随便做做NOI ONLINE">https://Deng-Duck.github.io/tag/Answer/</span>
+            
+        
+            
+                <span name="plfeature">https://s1.imagehub.cc/images/2022/08/20/2233.jpg</span>
+                
+            <span name="pltitle">2022年3月3日模拟赛总结</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/20220303/</span>
+            <span name="pldate">2022-03-03</span>
+            <span name="plstats">7 min read</span>
+            
+                <span name="pltag" alt="2022年3月3日模拟赛总结">比赛总结</span>
+                <span name="pltaglink" alt="2022年3月3日模拟赛总结">https://Deng-Duck.github.io/tag/Contest/</span>
+            
+        
+            
+                <span name="plfeature">https://s1.imagehub.cc/images/2022/08/20/0dd9b72e672c3b4b3886ef8f8dd027e7.jpg</span>
+                
+            <span name="pltitle">2021CSP-J网络连接题解</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/</span>
+            <span name="pldate">2021-11-18</span>
+            <span name="plstats">6 min read</span>
+            
+                <span name="pltag" alt="2021CSP-J网络连接题解">题目解法</span>
+                <span name="pltaglink" alt="2021CSP-J网络连接题解">https://Deng-Duck.github.io/tag/Answer/</span>
+            
+        
+            
+                <span name="plfeature">https://s1.imagehub.cc/images/2022/08/20/JK.png</span>
+                
+            <span name="pltitle">2021年9月20日模拟赛总结</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/20210920/</span>
+            <span name="pldate">2021-09-20</span>
+            <span name="plstats">6 min read</span>
+            
+                <span name="pltag" alt="2021年9月20日模拟赛总结">比赛总结</span>
+                <span name="pltaglink" alt="2021年9月20日模拟赛总结">https://Deng-Duck.github.io/tag/Contest/</span>
+            
+        
+            
+                <span name="plfeature">https://s1.imagehub.cc/images/2022/08/20/b25c0b1990e6325e331da72bcaa381ae.jpg</span>
+                
+            <span name="pltitle">合并石子三讲</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/he-bing-shi-zi-san-jiang/</span>
+            <span name="pldate">2021-09-05</span>
+            <span name="plstats">17 min read</span>
+            
+                <span name="pltag" alt="合并石子三讲">题目解法</span>
+                <span name="pltaglink" alt="合并石子三讲">https://Deng-Duck.github.io/tag/Answer/</span>
+            
+                <span name="pltag" alt="合并石子三讲">算法总结</span>
+                <span name="pltaglink" alt="合并石子三讲">https://Deng-Duck.github.io/tag/Algorithm/</span>
+            
+        
+    </div>
+
     
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/about/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://img-kysic-1258722770.file.myqcloud.com/f2c7f642aea1da83810429cddd8949d2/0732a5148dda0.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        关于我
+    <div id="post-container" class="eleg-allpostscontainer">
+        <div v-for="post in postinfo" class="eleg-posts">
+            <div v-if="post.elegcontainer=='eleg-postcontainer-left'">
+                    <div :class="post.elegcontainer">
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                        
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class='eleg-tags'>
+                        <div v-for="(tag,i) in post.tags">
+                            <div class="posttag">
+                                <a data-pjax :href="post.taglink[i]" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
             </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-08-18</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="postlink">
-                    <i class="fa fa-tag"></i> Gridea
-                </a>
-                
+            <div v-else>
+                    <div :class="post.elegcontainer">
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
+                        
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                    </div>
+                    <div class='eleg-tags'>
+                        <div v-for="(tag,i) in post.tags">
+                            <div class="posttag">
+                                <a data-pjax :href="post.taglink[i]" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
-        
-</div>
+    </div>
 
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/2022-nian-8-yue-12-ri-mo-ni-sai-zong-jie/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://w.wallhaven.cc/full/w8/wallhaven-w8vgvq.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        2022年8月12日模拟赛总结
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-08-12</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 8 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Contest/" class="postlink">
-                    <i class="fa fa-tag"></i> 比赛总结
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/qian-tan-bei-zeng-fa-qiu-jie-lca/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwallpaperm.cmcm.com%2Fc9899ba117b0cff3ce98bd3ed39c3f7e.jpg&amp;refer=http%3A%2F%2Fwallpaperm.cmcm.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1663501361&amp;t=6c7f41faee22d1a323374d1463be1c3c" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        浅谈倍增法求解LCA
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-06-09</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 23 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Algorithm/" class="postlink">
-                    <i class="fa fa-tag"></i> 算法总结
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/qian-tan-bsgs-he-exbsgs/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F0ddace757ef68ab4d1ef7650cf949cb506e389e9.png&amp;refer=http%3A%2F%2Fi0.hdslb.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1663501361&amp;t=abb2f09dd212ee3c62af2a74c044f50c" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        浅谈BSGS和EXBSGS
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-05-28</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 11 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Algorithm/" class="postlink">
-                    <i class="fa fa-tag"></i> 算法总结
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/tui-jian-san-ge-hao-yong-de-tampermonkey-luo-gu-cha-jian/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://img.tt98.com/d/2020/2020061918007893/5eec88cebaeda.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        推荐三个好用的TamperMonkey洛谷插件
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-05-19</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="postlink">
-                    <i class="fa fa-tag"></i> Gridea
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/2022-guang-dong-sheng-xuan-pu-ji-zu-mei-de-you-ji/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://p.qpic.cn/dnfbbspic/0/dnfbbs_dnfbbs_dnf_gamebbs_qq_com_forum_201911_22_083611h3sdmx38ezlxlw5e.jpg/0" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        2022广东省选普及组没的游记
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-04-19</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 9 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/BigContest/" class="postlink">
-                    <i class="fa fa-tag"></i> 比赛游记
-                </a>
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Contest/" class="postlink">
-                    <i class="fa fa-tag"></i> 比赛总结
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/jsoi2011-fen-te-chan-ti-jie/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://Deng-Duck.github.io/post-images/jsoi2011-fen-te-chan-ti-jie.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        JSOI2011分特产题解
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-04-14</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Answer/" class="postlink">
-                    <i class="fa fa-tag"></i> 题目解法
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/sui-bian-zuo-zuo-noi-online/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://Deng-Duck.github.io/post-images/sui-bian-zuo-zuo-noi-online.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        随便做做NOI ONLINE
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-03-29</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Answer/" class="postlink">
-                    <i class="fa fa-tag"></i> 题目解法
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/20220303/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://Deng-Duck.github.io/post-images/20220303.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        2022年3月3日模拟赛总结
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-03-03</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 7 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Contest/" class="postlink">
-                    <i class="fa fa-tag"></i> 比赛总结
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/2021csp-j-wang-luo-lian-jie-ti-jie/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://Deng-Duck.github.io/post-images/2021csp-j-wang-luo-lian-jie-ti-jie.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        2021CSP-J网络连接题解
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2021-11-18</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 6 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Answer/" class="postlink">
-                    <i class="fa fa-tag"></i> 题目解法
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/20210920/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://Deng-Duck.github.io/post-images/20210920.png" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        2021年9月20日模拟赛总结
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2021-09-20</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 6 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Contest/" class="postlink">
-                    <i class="fa fa-tag"></i> 比赛总结
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/he-bing-shi-zi-san-jiang/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://Deng-Duck.github.io/post-images/he-bing-shi-zi-san-jiang.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        合并石子三讲
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2021-09-05</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 17 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Answer/" class="postlink">
-                    <i class="fa fa-tag"></i> 题目解法
-                </a>
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/Algorithm/" class="postlink">
-                    <i class="fa fa-tag"></i> 算法总结
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-</div>
+    
+    <script>
+    var app2 = new Vue({
+      el: '#post-container',
+      mounted:function(){
+        this.getpostInfo();
+      },
+      methods:{
+         getpostInfo:function(){
+             var plflist = $("span[name='plfeature']");
+             var pltlist = $("span[name='pltitle']");
+             var plllist = $("span[name='pllink']");
+             var pldlist = $("span[name='pldate']");
+             var plslist = $("span[name='plstats']");
+             var pltaglist = $("span[name='pltag']");
+             var pltaglinklist = $("span[name='pltaglink']")
+             for(var i=0;i<this.pagesize&&i<plflist.length;i++){
+                 var d = {};
+                 var tags = []
+                 var taglink = []
+                 d["feature"] = plflist.eq(i).html();
+                 d["title"] = pltlist.eq(i).html();
+                 d["link"] = plllist.eq(i).html();
+                 d["date"] = pldlist.eq(i).html();
+                 d['stats'] = plslist.eq(i).html();
+                 for(var j=0;j<pltaglist.length;j++){
+                     if(pltaglist.eq(j).attr('alt')==d['title'])
+                        tags.push(pltaglist.eq(j).html())
+                 }
+                 d["tags"] = tags;
+                 for(var j=0;j<pltaglinklist.length;j++){
+                    if(pltaglinklist.eq(j).attr('alt')==d['title'])
+                        taglink.push(pltaglinklist.eq(j).html())
+                 }
+                 d["taglink"] = taglink
+                 if(i%2==0)
+                 {
+                     d['elegcontainer'] = 'eleg-postcontainer-left';
+                     d['imgclass'] = 'eleg-img-left'
+                 }
+                 else{
+                    d['elegcontainer'] = 'eleg-postcontainer-right';
+                    d['imgclass'] = 'eleg-img-right' 
+                 }
+                 this.postinfo.push(d);
+             }
+         }
+      },
+      data: {
+        pagesize: "25",
+        postinfo:[],
+      }
+    })
+    </script>
 
 
 <script>
@@ -1572,10 +1527,10 @@ menulist.eq(i).show();
             <div id="bg">
             </div>
             <!------- 背景图加载方式👇----- -->
-            <div id="bgchoice" style="display: none">default
+            <div id="bgchoice" style="display: none">link
             </div>
             
-            <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpeg</div>
+            <div id="bgurl" style="display:none">https://cdn.luogu.com.cn/upload/image_hosting/rangro5a.png</div>
             
             <!------- 背景图加载方式👆----- --> 
         <div id="landlord">
@@ -1593,7 +1548,7 @@ menulist.eq(i).show();
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = "default"
+    var bgchoice = "link"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')

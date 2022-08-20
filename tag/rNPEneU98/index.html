@@ -112,10 +112,10 @@
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660957513959" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660966602698" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
-        <span class="description" data-text='[""]'>&nbsp;</span>
+        <span class="description" data-text='["第一次访问可能卡顿，是正常现象"]'>&nbsp;</span>
         <div class="siteinfocontainer">
             <span class="siteinfo">文章</span>
             <span class="siteinfo">标签</span>
@@ -192,6 +192,12 @@
         
         
 
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://Deng-Duck.github.io/talk" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="说说"></i>&nbsp;<span data-text="说说">说说</span>
+            </a>
+        </div>
         
         
         
@@ -446,6 +452,12 @@
             </script>
         
             <script>
+                var iconname = "说说";
+                var iconurl = " https://ericamblog.oss-cn-shanghai.aliyuncs.com/2021/bb.png";
+                icondict[iconname] = iconurl;
+            </script>
+        
+            <script>
                 var iconname = "标签";
                 var iconurl = "https://ericam.top/media/images/Tag.png";
                 icondict[iconname] = iconurl;
@@ -475,7 +487,7 @@
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"","img":"","text":"","time":""}]');
+        var t = JSON.parse('[{"author":"Gridea","img":"","text":"这个fog主题不错","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -1024,6 +1036,8 @@ menulist.eq(i).show();
         
         
         
+        <li><a data-pjax href="https://Deng-Duck.github.io/talk" style="color:white">说说</a></li>
+        
         
           
         <li><a data-pjax href="https://Deng-Duck.github.io/friends" style="color:white">友链</a></li>
@@ -1081,61 +1095,137 @@ menulist.eq(i).show();
                         <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
                             <link rel="stylesheet" href="https://Deng-Duck.github.io/media/css/font-awesome.css">
 
-<div id="post-container">
+    <div style="display: none;">
+        
+            
+                <span name="plfeature">https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b</span>
+                
+            <span name="pltitle">关于我</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/about/</span>
+            <span name="pldate">2022-08-18</span>
+            <span name="plstats">1 min read</span>
+            
+                <span name="pltag" alt="关于我">Gridea</span>
+                <span name="pltaglink" alt="关于我">https://Deng-Duck.github.io/tag/rNPEneU98/</span>
+            
+        
+            
+                <span name="plfeature">https://img.tt98.com/d/2020/2020061918007893/5eec88cebaeda.jpg</span>
+                
+            <span name="pltitle">推荐三个好用的TamperMonkey洛谷插件</span>
+            <span name="pllink">https://Deng-Duck.github.io/post/tui-jian-san-ge-hao-yong-de-tampermonkey-luo-gu-cha-jian/</span>
+            <span name="pldate">2022-05-19</span>
+            <span name="plstats">3 min read</span>
+            
+                <span name="pltag" alt="推荐三个好用的TamperMonkey洛谷插件">Gridea</span>
+                <span name="pltaglink" alt="推荐三个好用的TamperMonkey洛谷插件">https://Deng-Duck.github.io/tag/rNPEneU98/</span>
+            
+        
+    </div>
+
     
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/about/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://img-kysic-1258722770.file.myqcloud.com/f2c7f642aea1da83810429cddd8949d2/0732a5148dda0.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        关于我
+    <div id="post-container" class="eleg-allpostscontainer">
+        <div v-for="post in postinfo" class="eleg-posts">
+            <div v-if="post.elegcontainer=='eleg-postcontainer-left'">
+                    <div :class="post.elegcontainer">
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                        
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
             </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-08-18</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="postlink">
-                    <i class="fa fa-tag"></i> Gridea
-                </a>
-                
+            <div v-else>
+                    <div :class="post.elegcontainer">
+                        <div class="eleg-info">
+                            <span class="eleg-title">{{post.title}}</span>
+                            <div style="margin-top:15px;">
+                                <span class="postdate eleg-date"><i class="fa fa-calendar"></i>{{post.date}}</span>
+                                <span class="poststatus postdate eleg-stats"><i class="fa fa-clock-o"></i> {{post.stats}}</span>
+                            </div>
+                            <div style="margin-top:50px">
+                                <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
+                            </div>
+                        </div>
+                        
+                        <img :src="post.feature" alt="" :class="post.imgclass">
+                    </div>
+                    <div class='eleg-tags'>
+                        <div v-for="tag in post.tags">
+                            <div class="posttag">
+                                <a data-pjax href="" class="postlink eleg-postlink">
+                                    <i class="fa fa-tag"></i>{{tag}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
-        
-</div>
+    </div>
 
-    <div class="postshow postlist">
-        
-        <a data-pjax href="https://Deng-Duck.github.io/post/tui-jian-san-ge-hao-yong-de-tampermonkey-luo-gu-cha-jian/" class="apost">
-            <div id="post" style="width:100%">
-                <img src="https://img.tt98.com/d/2020/2020061918007893/5eec88cebaeda.jpg" class="postimage">
-                <div class="posttitlebox">
-                    <div class="posttitle">
-                        推荐三个好用的TamperMonkey洛谷插件
-                    </div>
-                </div>
-            </div>
-        </a>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2022-05-19</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
-            <div class="posttag">
-                
-                <a data-pjax href="https://Deng-Duck.github.io/tag/rNPEneU98/" class="postlink">
-                    <i class="fa fa-tag"></i> Gridea
-                </a>
-                
-            </div>
-        </div>
-        
-</div>
-
-</div>
+    
+    <script>
+    var app2 = new Vue({
+      el: '#post-container',
+      mounted:function(){
+        this.getpostInfo();
+      },
+      methods:{
+         getpostInfo:function(){
+             var plflist = $("span[name='plfeature']");
+             var pltlist = $("span[name='pltitle']");
+             var plllist = $("span[name='pllink']");
+             var pldlist = $("span[name='pldate']");
+             var plslist = $("span[name='plstats']");
+             var pltaglist = $("span[name='pltag']");
+             for(var i=0;i<this.pagesize&&i<plflist.length;i++){
+                 var d = {};
+                 var tags = []
+                 d["feature"] = plflist.eq(i).html();
+                 d["title"] = pltlist.eq(i).html();
+                 d["link"] = plllist.eq(i).html();
+                 d["date"] = pldlist.eq(i).html();
+                 d['stats'] = plslist.eq(i).html();
+                 for(var j=0;j<pltaglist.length;j++){
+                     if(pltaglist.eq(j).attr('alt')==d['title'])
+                        tags.push(pltaglist.eq(j).html())
+                 }
+                 d["tags"] = tags;
+                 if(i%2==0)
+                 {
+                     d['elegcontainer'] = 'eleg-postcontainer-left';
+                     d['imgclass'] = 'eleg-img-left'
+                 }
+                 else{
+                    d['elegcontainer'] = 'eleg-postcontainer-right';
+                    d['imgclass'] = 'eleg-img-right' 
+                 }
+                 this.postinfo.push(d);
+             }
+         }
+      },
+      data: {
+        pagesize: "25",
+        postinfo:[],
+      }
+    })
+    </script>
 
                             <div>
                                 <div class="pcpagi">
@@ -1204,10 +1294,10 @@ menulist.eq(i).show();
         <div id="bg">
         </div>
         <!------- 背景图加载方式👇----- -->
-        <div id="bgchoice" style="display: none">default
+        <div id="bgchoice" style="display: none">link
                     </div>
                     
-                    <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpeg</div>
+                    <div id="bgurl" style="display:none">https://cdn.luogu.com.cn/upload/image_hosting/rangro5a.png</div>
                        
         </div>
         <!------- 背景图加载方式👆 --------------->
@@ -1228,7 +1318,7 @@ menulist.eq(i).show();
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = "default"
+    var bgchoice = "link"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')

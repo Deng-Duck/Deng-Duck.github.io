@@ -169,6 +169,8 @@
         
         
         
+        <li><a data-pjax href="https://Deng-Duck.github.io/talk" style="color:white">说说</a></li>
+        
         
           
         <li><a data-pjax href="https://Deng-Duck.github.io/friends" style="color:white">友链</a></li>
@@ -308,10 +310,10 @@
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660957513959" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660966602698" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
-        <span class="description" data-text='[""]'>&nbsp;</span>
+        <span class="description" data-text='["第一次访问可能卡顿，是正常现象"]'>&nbsp;</span>
         <div class="siteinfocontainer">
             <span class="siteinfo">文章</span>
             <span class="siteinfo">标签</span>
@@ -388,6 +390,12 @@
         
         
 
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://Deng-Duck.github.io/talk" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="说说"></i>&nbsp;<span data-text="说说">说说</span>
+            </a>
+        </div>
         
         
         
@@ -642,6 +650,12 @@
             </script>
         
             <script>
+                var iconname = "说说";
+                var iconurl = " https://ericamblog.oss-cn-shanghai.aliyuncs.com/2021/bb.png";
+                icondict[iconname] = iconurl;
+            </script>
+        
+            <script>
                 var iconname = "标签";
                 var iconurl = "https://ericam.top/media/images/Tag.png";
                 icondict[iconname] = iconurl;
@@ -671,7 +685,7 @@
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"","img":"","text":"","time":""}]');
+        var t = JSON.parse('[{"author":"Gridea","img":"","text":"这个fog主题不错","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -1152,7 +1166,7 @@ menulist.eq(i).show();
         <div class="postshow postpadding" style="padding-bottom: 0;">
             
             <div class="postdetailimg">
-                <img src="https://Deng-Duck.github.io/post-images/he-bing-shi-zi-san-jiang.jpg" class="postimage" style="cursor:auto">
+                <img src="https://s1.imagehub.cc/images/2022/08/20/b25c0b1990e6325e331da72bcaa381ae.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
                 <div class="postdate"><i class="fa fa-calendar"></i>2021-09-05</div>
@@ -1695,7 +1709,7 @@ int main()
             <a  data-pjax class="prev-post-pc" href="https://Deng-Duck.github.io/post/20210920/"  style="color: black;">
                 <div id="ppcontainer">
                     
-                    <img src="https://Deng-Duck.github.io/post-images/20210920.png" style="width: 100%;" class="opimg">
+                    <img src="https://s1.imagehub.cc/images/2022/08/20/JK.png" style="width: 100%;" class="opimg">
                     
                     <h4 class="optitle">2021年9月20日模拟赛总结</h4>
                 </div>
@@ -1807,10 +1821,10 @@ int main()
         <!-- aplayer播放器加载👆 -->
     </div>
     <!-- 背景图加载方式👇 -->
-    <div id="bgchoice" style="display: none">default
+    <div id="bgchoice" style="display: none">link
                 </div>
                 
-                <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpeg</div>
+                <div id="bgurl" style="display:none">https://cdn.luogu.com.cn/upload/image_hosting/rangro5a.png</div>
                 
     <!-- 背景图加载方式👆 -->
 </body>
@@ -1861,7 +1875,7 @@ int main()
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = "default"
+    var bgchoice = "link"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')

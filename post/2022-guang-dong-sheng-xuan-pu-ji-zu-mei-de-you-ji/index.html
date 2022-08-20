@@ -170,6 +170,8 @@ T6简单循环题思路错误，又想到分解了
         
         
         
+        <li><a data-pjax href="https://Deng-Duck.github.io/talk" style="color:white">说说</a></li>
+        
         
           
         <li><a data-pjax href="https://Deng-Duck.github.io/friends" style="color:white">友链</a></li>
@@ -309,10 +311,10 @@ T6简单循环题思路错误，又想到分解了
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660957513959" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660966602698" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
-        <span class="description" data-text='[""]'>&nbsp;</span>
+        <span class="description" data-text='["第一次访问可能卡顿，是正常现象"]'>&nbsp;</span>
         <div class="siteinfocontainer">
             <span class="siteinfo">文章</span>
             <span class="siteinfo">标签</span>
@@ -389,6 +391,12 @@ T6简单循环题思路错误，又想到分解了
         
         
 
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://Deng-Duck.github.io/talk" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="说说"></i>&nbsp;<span data-text="说说">说说</span>
+            </a>
+        </div>
         
         
         
@@ -643,6 +651,12 @@ T6简单循环题思路错误，又想到分解了
             </script>
         
             <script>
+                var iconname = "说说";
+                var iconurl = " https://ericamblog.oss-cn-shanghai.aliyuncs.com/2021/bb.png";
+                icondict[iconname] = iconurl;
+            </script>
+        
+            <script>
                 var iconname = "标签";
                 var iconurl = "https://ericam.top/media/images/Tag.png";
                 icondict[iconname] = iconurl;
@@ -672,7 +686,7 @@ T6简单循环题思路错误，又想到分解了
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"","img":"","text":"","time":""}]');
+        var t = JSON.parse('[{"author":"Gridea","img":"","text":"这个fog主题不错","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -1153,7 +1167,7 @@ menulist.eq(i).show();
         <div class="postshow postpadding" style="padding-bottom: 0;">
             
             <div class="postdetailimg">
-                <img src="https://p.qpic.cn/dnfbbspic/0/dnfbbs_dnfbbs_dnf_gamebbs_qq_com_forum_201911_22_083611h3sdmx38ezlxlw5e.jpg/0" class="postimage" style="cursor:auto">
+                <img src="https://s1.imagehub.cc/images/2022/08/20/imagec3de7949660faad3.png" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
                 <div class="postdate"><i class="fa fa-calendar"></i>2022-04-19</div>
@@ -1391,7 +1405,7 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
             <a data-pjax class="next-post-pc" href="https://Deng-Duck.github.io/post/jsoi2011-fen-te-chan-ti-jie/"  style="color: black;">
                 <div id="npcontainer">
                     
-                    <img src="https://Deng-Duck.github.io/post-images/jsoi2011-fen-te-chan-ti-jie.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://s1.imagehub.cc/images/2022/08/20/22055166a847a1a942021103d5579313.jpg" style="width: 100%;" class="opimg">
                     
                     <h4 class="optitle">JSOI2011分特产题解</h4>
                 </div>
@@ -1501,10 +1515,10 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
         <!-- aplayer播放器加载👆 -->
     </div>
     <!-- 背景图加载方式👇 -->
-    <div id="bgchoice" style="display: none">default
+    <div id="bgchoice" style="display: none">link
                 </div>
                 
-                <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpeg</div>
+                <div id="bgurl" style="display:none">https://cdn.luogu.com.cn/upload/image_hosting/rangro5a.png</div>
                 
     <!-- 背景图加载方式👆 -->
 </body>
@@ -1555,7 +1569,7 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = "default"
+    var bgchoice = "link"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')

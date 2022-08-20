@@ -113,10 +113,10 @@
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660957513959" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660966602698" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
-        <span class="description" data-text='[""]'>&nbsp;</span>
+        <span class="description" data-text='["第一次访问可能卡顿，是正常现象"]'>&nbsp;</span>
         <div class="siteinfocontainer">
             <span class="siteinfo">文章</span>
             <span class="siteinfo">标签</span>
@@ -193,6 +193,12 @@
         
         
 
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://Deng-Duck.github.io/talk" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="说说"></i>&nbsp;<span data-text="说说">说说</span>
+            </a>
+        </div>
         
         
         
@@ -447,6 +453,12 @@
             </script>
         
             <script>
+                var iconname = "说说";
+                var iconurl = " https://ericamblog.oss-cn-shanghai.aliyuncs.com/2021/bb.png";
+                icondict[iconname] = iconurl;
+            </script>
+        
+            <script>
                 var iconname = "标签";
                 var iconurl = "https://ericam.top/media/images/Tag.png";
                 icondict[iconname] = iconurl;
@@ -476,7 +488,7 @@
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"","img":"","text":"","time":""}]');
+        var t = JSON.parse('[{"author":"Gridea","img":"","text":"这个fog主题不错","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -1025,6 +1037,8 @@ menulist.eq(i).show();
         
         
         
+        <li><a data-pjax href="https://Deng-Duck.github.io/talk" style="color:white">说说</a></li>
+        
         
           
         <li><a data-pjax href="https://Deng-Duck.github.io/friends" style="color:white">友链</a></li>
@@ -1082,7 +1096,7 @@ menulist.eq(i).show();
                         <div class="mobilebar">
                             <img src="" alt="" class="plbg">
 <script>
-    var bgchoice = "default";
+    var bgchoice = "link";
     if(bgchoice=='default')
         var plbgurl = "/media/images/custom-mobilebg.jpg"
     else  
@@ -1099,8 +1113,8 @@ menulist.eq(i).show();
                         </script>
                         <div class="tagsbackgroundleft"></div>
                         
-                            <img class="tagsimg" src="/media/images/custom-tagimage.png" alt="">
-                            
+                            <img class="tagsimg" src="https://i0.hdslb.com/bfs/album/20f8443676614db3ac0bbb9449062749e3e11cdc.jpg@1036w.webp" alt="">
+                        
                         <div class="tags-container">
                         
                             <a data-pjax class="tag" href="https://Deng-Duck.github.io/tag/rNPEneU98/"># Gridea</a>
@@ -1128,10 +1142,10 @@ menulist.eq(i).show();
         <div id="bg">
         </div>
         <!-- 背景图加载方式👇 -->
-        <div id="bgchoice" style="display: none">default
+        <div id="bgchoice" style="display: none">link
                     </div>
                     
-                    <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpeg</div>
+                    <div id="bgurl" style="display:none">https://cdn.luogu.com.cn/upload/image_hosting/rangro5a.png</div>
                        
         </div>
         <!-- 背景图加载方式👆 -->
@@ -1159,7 +1173,7 @@ menulist.eq(i).show();
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = "default"
+    var bgchoice = "link"
     var bg = $('#bg');
     var bgurl = document.getElementById("bgurl").innerHTML;
     if (bgchoice == 'default')

@@ -327,7 +327,7 @@ code
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660976647779" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660982044931" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
         <span class="description" data-text='["欢迎通过右下方的聊天按钮与我交流❤"]'>&nbsp;</span>
@@ -549,8 +549,8 @@ code
 <!------------- Fog1.0版本彩蛋👆 -------------->
 <script>
     function change_topmenu(){
-        tmcolor = "#f8f9fa"
-        tsnamecolor = "#f8f9fa"
+        tmcolor = ""
+        tsnamecolor = ""
         $(".navbar-inverse .navbar-nav>li>a").css("color",tmcolor)
         $(".navbar-inverse .navbar-brand").css("color",tsnamecolor)
         $(".navbar-fixed-top").css("border-radius","0 0 10px 10px")
@@ -738,7 +738,7 @@ code
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"这个fog主题不错,好喜欢！","time":"2022年8月20日"},{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"航电比赛卡了好久.......","time":"2022年8月20日"}]');
+        var t = JSON.parse('[{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"这个fog主题不错,好喜欢！","time":"2022年8月20日"},{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"航电比赛卡了好久.......","time":"2022年8月20日"},{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"WZY手写HTML太强了！","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};

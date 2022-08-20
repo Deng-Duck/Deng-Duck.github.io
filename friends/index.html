@@ -126,7 +126,7 @@
                         src='https://Deng-Duck.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660976647779" class="avatar">
+            <img src="https://Deng-Duck.github.io/images/avatar.png?v=1660982044931" class="avatar">
         </div>
         <div class="sitename">DengDuck&#39;s Blog</div>
         <span class="description" data-text='["欢迎通过右下方的聊天按钮与我交流❤"]'>&nbsp;</span>
@@ -348,8 +348,8 @@
 <!------------- Fog1.0版本彩蛋👆 -------------->
 <script>
     function change_topmenu(){
-        tmcolor = "#f8f9fa"
-        tsnamecolor = "#f8f9fa"
+        tmcolor = ""
+        tsnamecolor = ""
         $(".navbar-inverse .navbar-nav>li>a").css("color",tmcolor)
         $(".navbar-inverse .navbar-brand").css("color",tsnamecolor)
         $(".navbar-fixed-top").css("border-radius","0 0 10px 10px")
@@ -537,7 +537,7 @@
     get();
 
     function get() {
-        var t = JSON.parse('[{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"这个fog主题不错,好喜欢！","time":"2022年8月20日"},{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"航电比赛卡了好久.......","time":"2022年8月20日"}]');
+        var t = JSON.parse('[{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"这个fog主题不错,好喜欢！","time":"2022年8月20日"},{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"航电比赛卡了好久.......","time":"2022年8月20日"},{"author":"DengDuck","img":"https://pica.zhimg.com/v2-7554d41438c66c34bb5cd9cf0c68bcec_1440w.jpg?source=172ae18b","text":"WZY手写HTML太强了！","time":"2022年8月20日"}]');
         talkindex = t.length - 1;
         for (var i = 0; i <= t.length - 1; i++) {
             var d = {};
@@ -1161,6 +1161,33 @@ menulist.eq(i).show();
             </div>
         </div>
         
+        <div class="friend-box" onclick="window.location.href= 'https://zswangziye.github.io/';return false">
+            <img class="friend-avatar" src="https://cdn.luogu.com.cn/upload/usericon/243962.png">
+            <div class="flink-info">
+                <a href="https://zswangziye.github.io/" class="title" target="_blank">Wangziye</a>
+                <div style="margin-top:10px"></div>
+                <p>文化课+信息学双重大佬</p>
+            </div>
+        </div>
+        
+        <div class="friend-box" onclick="window.location.href= 'https://www.luogu.com.cn/user/539280';return false">
+            <img class="friend-avatar" src="https://cdn.luogu.com.cn/upload/usericon/539280.png">
+            <div class="flink-info">
+                <a href="https://www.luogu.com.cn/user/539280" class="title" target="_blank">BinBin Ice Cream</a>
+                <div style="margin-top:10px"></div>
+                <p>BinBinOI的团长</p>
+            </div>
+        </div>
+        
+        <div class="friend-box" onclick="window.location.href= 'https://www.luogu.com.cn/user/570770';return false">
+            <img class="friend-avatar" src="https://cdn.luogu.com.cn/upload/usericon/570770.png">
+            <div class="flink-info">
+                <a href="https://www.luogu.com.cn/user/570770" class="title" target="_blank">CCX_CoolMint</a>
+                <div style="margin-top:10px"></div>
+                <p>机房最六的男人</p>
+            </div>
+        </div>
+        
         
     </div>
 
@@ -1185,6 +1212,30 @@ menulist.eq(i).show();
                 <img class="favatar" src="https://deng-duck.github.io/images/avatar.png?v=1660972214704">
                 <h2>DengDuck</h2>
                 <h3>我自己！</h3>
+            </div>
+        </div>
+        
+        <div class="background" onclick="window.open('https://zswangziye.github.io/');return false">
+            <div class="infoForm" title="文化课+信息学双重大佬">
+                <img class="favatar" src="https://cdn.luogu.com.cn/upload/usericon/243962.png">
+                <h2>Wangziye</h2>
+                <h3>文化课+信息学双重大佬</h3>
+            </div>
+        </div>
+        
+        <div class="background" onclick="window.open('https://www.luogu.com.cn/user/539280');return false">
+            <div class="infoForm" title="BinBinOI的团长">
+                <img class="favatar" src="https://cdn.luogu.com.cn/upload/usericon/539280.png">
+                <h2>BinBin Ice Cream</h2>
+                <h3>BinBinOI的团长</h3>
+            </div>
+        </div>
+        
+        <div class="background" onclick="window.open('https://www.luogu.com.cn/user/570770');return false">
+            <div class="infoForm" title="机房最六的男人">
+                <img class="favatar" src="https://cdn.luogu.com.cn/upload/usericon/570770.png">
+                <h2>CCX_CoolMint</h2>
+                <h3>机房最六的男人</h3>
             </div>
         </div>
         

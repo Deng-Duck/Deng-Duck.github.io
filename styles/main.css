@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'FXAiQingQiXiangSuo';
-  src: url('');
+  font-family: 'siyuan';
+  src: url('https://github.com/Deng-Duck/font/blob/main/SourceHanSansSC-Bold-2.otf');
+  font-family: 'consola';
+  src: url('https://github.com/Deng-Duck/font/blob/main/consola-1.ttf');
 }
 @media screen and (min-width: 1200px) {
   #tab1 {
@@ -3328,14 +3330,18 @@ a {
         }
       
         .sitename{
-          font-family: kaiti;
+          font-family: consola;
         }
       
         .description{
-          font-family: kaiti;
+          font-family: siyuan;
         }
       
         .siteinfo{
-          font-family: kaiti;
+          font-family: siyuan;
+        }
+      
+        .menubutton{
+          font-family: siyuan;
         }
       

@@ -2426,10 +2426,10 @@ body.mdui-locked {
   display: none;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Consolas', 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
   font-weight: 400;
-  background: #fafafa;
   color: #404040;
+  background-color: #FFF;
 }
 a {
   text-decoration: none;
@@ -2444,7 +2444,7 @@ a {
 /* 头部 */
 .header {
   padding: 70px 0px 70px 0px;
-  background-color: #63cdb5;
+  background-color: #44cef6;
 }
 .container {
   max-width: 820px;
@@ -2454,7 +2454,7 @@ a {
   width: 95%;
 }
 .index-title {
-  font-size: 45px;
+  font-size: 32px;
   font-weight: 600;
 }
 .index-title a {
@@ -2477,7 +2477,7 @@ a {
   box-sizing: border-box;
   display: block;
   padding: 5px 20px;
-  font-size: 13px;
+  font-size: 20px;
   color: #fff;
   position: relative;
 }
@@ -2631,7 +2631,7 @@ a {
 }
 /* 页脚 */
 .footer {
-  background: #fff;
+  background: #FFF;
   padding: 15px 0;
   font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
 }

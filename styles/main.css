@@ -2426,7 +2426,7 @@ body.mdui-locked {
   display: none;
 }
 body {
-  font-family: 'Consolas', 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+  font-family: 'chilanka', 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
   font-weight: 400;
   color: #404040;
   background-color: #FFF;
@@ -2907,3 +2907,8 @@ samp {
     width: 100%;
   }
 }
+
+      .v {
+        display: none;
+      }
+    

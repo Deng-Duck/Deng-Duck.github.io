@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Deng-Duck.github.io</id>
     <title>DengDuckのBlog</title>
-    <updated>2022-09-14T10:49:01.594Z</updated>
+    <updated>2022-09-14T12:24:22.474Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Deng-Duck.github.io"/>
     <link rel="self" href="https://Deng-Duck.github.io/atom.xml"/>
@@ -292,6 +292,21 @@ f_i=(\frac{1}{a_i}\sum^{a_i}_{j=1} f_{i+j} )+\frac{1}{a_i}+1\\
 <li><strong>Bilibili</strong> <strong>某邓吖</strong> <strong>私信</strong><br>
 也可以在下面留言<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
 </ul>
+<script src="https://giscus.app/client.js"
+        data-repo="Deng-Duck/Deng-Duck.github.io"
+        data-repo-id="R_kgDOHp7how"
+        data-category="General"
+        data-category-id="DIC_kwDOHp7ho84CQ9lG"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -1580,21 +1595,6 @@ inline ll exBSGS(ll a,ll b,ll p)
 <p>Tothetime_tolife 犇犇指出了链接挂掉</p>
 <p>ppip 犇犇补充了 TamperMonkey 是 JS 代码</p>
 <!-- more -->
-<script src="https://giscus.app/client.js"
-        data-repo="Deng-Duck/Deng-Duck.github.io"
-        data-repo-id="R_kgDOHp7how"
-        data-category="General"
-        data-category-id="DIC_kwDOHp7ho84CQ9lG"
-        data-mapping="url"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="dark"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
 ]]></content>
     </entry>
     <entry>

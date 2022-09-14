@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+::-webkit-scrollbar-thumb { /*滚动条滑块*/
+    background-color: #1E90FF; /*滑块颜色*/
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent); /*滑块样式*/
+    border-radius: 5px; /*设置圆角*/
+}
+::-webkit-scrollbar-track { /*滚动条滑槽*/
+    background-color: #FFFACD; /*滑槽颜色*/
+    border-radius: 5px; /*设置圆角*/
+}
+::-webkit-scrollbar { /*滚动条大小*/
+    width: 8px; /*竖向滚动条的宽度*/
+    height: 8px; /*横向滚动条的高度*/
+}
+</style>
 
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +24,7 @@
 <meta name="description" content="菜菜菜">
 <meta name="theme-color" content="#74c0fc">
 <title>2022年8月12日模拟赛总结 | DengDuckのBlog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1663152538312">
+<link rel="shortcut icon" href="/favicon.ico?v=1663158261356">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -44,6 +59,24 @@
   <meta name="description" content="2022年8月12日模拟赛总结" />
   <meta name="keywords" content="比赛总结" />
 </head>
+<!-- 复制弹窗提示开始 -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  window.onload = function(){
+    document.body.oncopy = function() {
+      swal({
+        title: "复制成功！",
+        text: "不要抄袭哦！",
+        icon: "success",
+        buttons: false,
+        closeOnClickOutside: false,
+        timer: 1000,
+     });
+    };
+  }
+</script>
+<!-- 复制弹窗提示结束 -->
+
 
 <body>
   <div class="head-top-line"></div>
@@ -82,7 +115,7 @@
               
               
                 <a href="/" target="_self">
-                  <i class="fa fa-globe"></i> 首页
+                  首页
                 </a>
               
             </li>
@@ -95,7 +128,7 @@
               
               
                 <a href="/archives" target="_self">
-                  <i class="fa fa-globe"></i> 归档
+                  归档
                 </a>
               
             </li>
@@ -108,7 +141,7 @@
               
               
                 <a href="/tags" target="_self">
-                  <i class="fa fa-globe"></i> 标签
+                  标签
                 </a>
               
             </li>
@@ -121,7 +154,7 @@
               
               
                 <a href="/post/about" target="_self">
-                  <i class="fa fa-globe"></i> 关于
+                  关于
                 </a>
               
             </li>
@@ -131,7 +164,7 @@
               <li class="nav-item ">
                 <a href="/friends/" target="_self">
                   
-                    <i class="fa fa-address-book"></i> 朋友
+                    👤朋友
                   
                 </a>
               </li>
@@ -171,6 +204,7 @@
 
   navToggle.addEventListener('click',navClick);  
 </script>
+
   </div>
   <div class="main-continer">
     
@@ -779,6 +813,12 @@ int main() {
 </section>
 
             </div>
+            <div>
+			<br/> 
+			  <div style="text-align:center;color: #999;font-size:14px;">---------- 本文到此结束 <i class="fa fa-paw"></i> 感谢您的阅读 ----------</div>
+			<br/>
+			</div>
+
             
               <div class="reward-btn">
                 <div class="reward-btn-text">赞赏</div>
@@ -819,9 +859,16 @@ int main() {
   </ul>
   <div class="tags">
     
-      <a href="https://Deng-Duck.github.io/tag/Contest/"># 比赛总结</a>
+      <a href="https://Deng-Duck.github.io/tag/Contest/"><i class="fa fa-tag"></i> 比赛总结</a>
     
   </div>
+  <br/><!-- 引入依赖 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+<!-- 只要一个div的class是social-share即可，内容会自动初始化 -->
+<div class="social-share" style="text-align:center;font-size:14px;" data-sites="facebook,twitter,linkedin,google,wechat,qq,qzone,weibo">分享到：</div>
+
+
   <div class="nav">
     <div class="nav-prev">
       
@@ -854,11 +901,12 @@ int main() {
 <div class="footer-box">
   <footer class="footer">
     <center id="runTimeBox">
-      已运行:<span id="run_time"></span>
+      网站已安全运行： <span id="run_time"></span>
     </center>
-    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <i class="fa fa-eye"></i><span id="busuanzi_container_site_pv">总访问量： <span id="busuanzi_value_site_pv"></span> 次</span>
     <span class="post-meta-divider">|</span>
-    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+    <i class="fa fa-users"></i><span id="busuanzi_container_site_uv">总访客数： <span id="busuanzi_value_site_uv"></span> 人</span>
+
 
     <script>
       BirthDay = new Date('2022-8-18');
@@ -867,10 +915,19 @@ int main() {
           str = "";
           today = new Date();
           timeold = today.getTime() - BirthDay.getTime();
-          msPerDay = 24 * 60 * 60 * 1000;
-          e_daysold = timeold / msPerDay;
+          sectimeold = timeold / 1000
+          secondsold = Math.floor(sectimeold);
+          msPerDay = 24 * 60 * 60 * 1000
+          msPerYear = 365 * 24 * 60 * 60 * 1000
+          e_daysold = timeold / msPerDay % 365
+          e_yearsold = timeold / msPerYear
           daysold = Math.floor(e_daysold);
-          str += daysold + "天";
+          yearsold = Math.floor(e_yearsold);
+          str = yearsold + " 年 ";
+          str += daysold + " 天 ";
+          str += today.getHours() + " 时 ";
+          str += today.getMinutes() + " 分 ";
+          str += today.getSeconds() + " 秒";
           return str;
         }
         setInterval(function () {
@@ -880,6 +937,7 @@ int main() {
         document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
       }
     </script>
+
     <div class="poweredby">
       非常好博客，爱来自鸭子！<br/>
 希望大家喜欢我的博客和DuckOI
@@ -1349,7 +1407,7 @@ int main() {
           &lt;p&gt;&lt;img src=&#34;https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fss2.meipian.me%2Fusers%2F179288277%2F3129eaebfd3bdd84688230b0bc8f8e89.jpg%3Fmeipian-raw%2Fbucket%2Fivwen%2Fkey%2FdXNlcnMvMTc5Mjg4Mjc3LzMxMjllYWViZmQzYmRkODQ2ODgyMzBiMGJjOGY4ZTg5LmpwZw%3D%3D%2Fsign%2Fffabdbaaa87aca8b213b120b94353faf.jpg&amp;amp;refer=http%3A%2F%2Fss2.meipian.me&amp;amp;app=2002&amp;amp;size=f9999,10000&amp;amp;q=a80&amp;amp;n=0&amp;amp;g=0n&amp;amp;fmt=auto?sec=1665233287&amp;amp;t=dbc473cc41228cea75260fc77ab09ef8&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
 光阴似箭，岁月如梭，转眼您任教我们一年多了&lt;br&gt;
 还记得第一次见到您的时候，我还是一个急性子，静不下心的孩子&lt;br&gt;
-如今，我虽然还有很多问题，但以及更加成熟了&lt;br&gt;
+如今，我虽然还有很多问题，但已经更加成熟了&lt;br&gt;
 您和信息学改变了我，我更加会和人打交道了，我更会独立思考了&lt;br&gt;
 也第一次，正式思考了自己的未来&lt;br&gt;
 路，还很长&lt;br&gt;
@@ -1626,6 +1684,21 @@ f_i=(\frac{1}{a_i}\sum^{a_i}_{j=1} f_{i+j} )+\frac{1}{a_i}+1\\
 &lt;li&gt;&lt;strong&gt;Bilibili&lt;/strong&gt; &lt;strong&gt;某邓吖&lt;/strong&gt; &lt;strong&gt;私信&lt;/strong&gt;&lt;br&gt;
 也可以在下面留言&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn2&#34; id=&#34;fnref2&#34;&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;script src=&#34;https://giscus.app/client.js&#34;
+        data-repo=&#34;Deng-Duck/Deng-Duck.github.io&#34;
+        data-repo-id=&#34;R_kgDOHp7how&#34;
+        data-category=&#34;General&#34;
+        data-category-id=&#34;DIC_kwDOHp7ho84CQ9lG&#34;
+        data-mapping=&#34;url&#34;
+        data-strict=&#34;0&#34;
+        data-reactions-enabled=&#34;1&#34;
+        data-emit-metadata=&#34;0&#34;
+        data-input-position=&#34;bottom&#34;
+        data-theme=&#34;light&#34;
+        data-lang=&#34;zh-CN&#34;
+        crossorigin=&#34;anonymous&#34;
+        async&gt;
+&lt;/script&gt;
 &lt;hr class=&#34;footnotes-sep&#34;&gt;
 &lt;section class=&#34;footnotes&#34;&gt;
 &lt;ol class=&#34;footnotes-list&#34;&gt;
@@ -2889,21 +2962,6 @@ inline ll exBSGS(ll a,ll b,ll p)
 &lt;p&gt;Tothetime_tolife 犇犇指出了链接挂掉&lt;/p&gt;
 &lt;p&gt;ppip 犇犇补充了 TamperMonkey 是 JS 代码&lt;/p&gt;
 &lt;!-- more --&gt;
-&lt;script src=&#34;https://giscus.app/client.js&#34;
-        data-repo=&#34;Deng-Duck/Deng-Duck.github.io&#34;
-        data-repo-id=&#34;R_kgDOHp7how&#34;
-        data-category=&#34;General&#34;
-        data-category-id=&#34;DIC_kwDOHp7ho84CQ9lG&#34;
-        data-mapping=&#34;url&#34;
-        data-strict=&#34;0&#34;
-        data-reactions-enabled=&#34;1&#34;
-        data-emit-metadata=&#34;0&#34;
-        data-input-position=&#34;bottom&#34;
-        data-theme=&#34;dark&#34;
-        data-lang=&#34;zh-CN&#34;
-        crossorigin=&#34;anonymous&#34;
-        async&gt;
-&lt;/script&gt;
 ">推荐三个好用的TamperMonkey洛谷插件</a>
       </div>
       

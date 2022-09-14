@@ -2,22 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Deng-Duck.github.io</id>
     <title>DengDuckのBlog</title>
-    <updated>2022-09-09T07:28:23.043Z</updated>
+    <updated>2022-09-14T10:02:11.937Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Deng-Duck.github.io"/>
     <link rel="self" href="https://Deng-Duck.github.io/atom.xml"/>
-    <subtitle>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;body&gt;
-&lt;!-- class =“hitokoto ” 是一言的默认选择器--&gt;
-      &lt;h2 class=&quot;hitokoto&quot; id=&quot;yiyancon&quot;&gt;&lt;/h2&gt; 
-      
-	  &lt;script type=&quot;text/javascript&quot; src=&quot;https://international.v1.hitokoto.cn?encode=js&amp;amp;charset=utf-8&amp;amp;c=k&quot;&gt;&lt;/script&gt;
-	
-&lt;/body&gt;
-&lt;/html&gt;
-
-</subtitle>
+    <subtitle>菜菜菜</subtitle>
     <logo>https://Deng-Duck.github.io/images/avatar.png</logo>
     <icon>https://Deng-Duck.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, DengDuckのBlog</rights>
@@ -260,11 +249,9 @@ f_i=(\frac{1}{a_i}\sum^{a_i}_{j=1} f_{i+j} )+\frac{1}{a_i}+1\\
         <link href="https://Deng-Duck.github.io/post/wo-cheng-gong-da-jian-liao-bo-ke-ping-lun-xi-tong/">
         </link>
         <updated>2022-09-01T11:46:10.000Z</updated>
-        <summary type="html"><![CDATA[<p>在主题的<code>feiye.ejs</code>添加Giscus代码即可</p>
-<p>说来有趣，Gitalk死了，Disqus死了，这个Giscus倒挺顽强</p>
+        <summary type="html"><![CDATA[<p>说来有趣，Gitalk死了，Disqus死了，这个Giscus倒挺顽强</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>在主题的<code>feiye.ejs</code>添加Giscus代码即可</p>
-<p>说来有趣，Gitalk死了，Disqus死了，这个Giscus倒挺顽强</p>
+        <content type="html"><![CDATA[<p>说来有趣，Gitalk死了，Disqus死了，这个Giscus倒挺顽强</p>
 <!-- more -->
 <p>效果如下</p>
 ]]></content>
@@ -285,7 +272,7 @@ f_i=(\frac{1}{a_i}\sum^{a_i}_{j=1} f_{i+j} )+\frac{1}{a_i}+1\\
 <figure data-type="image" tabindex="1"><img src="https://Deng-Duck.github.io/post-images/1662544331575.png" alt="" loading="lazy"></figure>
 <h2 id="关于本站">🏠 关于本站</h2>
 <p><a href="https://www.cnblogs.com/I-am-joker/">我的博客园</a></p>
-<p>本博客是我的新博客，以后只要使用本博客</p>
+<p>本博客是我的新博客<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，以后只要使用本博客</p>
 <p>优质的旧博客应该会放上来</p>
 <h2 id="博主是谁">👨‍💻 博主是谁</h2>
 <p>我是一个广东中山的蒟蒻</p>
@@ -303,8 +290,17 @@ f_i=(\frac{1}{a_i}\sum^{a_i}_{j=1} f_{i+j} )+\frac{1}{a_i}+1\\
 <li><strong>洛谷</strong> <code>DengDuck</code> <strong>私信</strong>（推荐）</li>
 <li><strong>邮箱</strong> <code>moudengya123@qq.com</code></li>
 <li><strong>Bilibili</strong> <strong>某邓吖</strong> <strong>私信</strong><br>
-也可以在下面留言</li>
+也可以在下面留言<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
 </ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>之前博主曾在CSDN等平台搭建博客 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Giscus有一定几率加载不出，请多次刷新 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
     <entry>
@@ -347,7 +343,7 @@ f_i=(\frac{1}{a_i}\sum^{a_i}_{j=1} f_{i+j} )+\frac{1}{a_i}+1\\
 }
 </code></pre>
 <p>那还不如不二分呢，感觉自己是个弱智</p>
-<p>这个时候czn大佬表示做完了，Orz</p>
+<p>这个时候czn大佬表示做完了，Orz<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <p>然后做T2，一眼前缀和，切了</p>
 <p>然后做T3，显然是递归，但我死活不过样例</p>
 <p>然后换了一种表达，A了自己造的所有数据</p>
@@ -494,7 +490,13 @@ int main() {
 </code></pre>
 <h2 id="在最后">在最后</h2>
 <p>其实我的代码很累赘，大家理解思路，不要照着打</p>
-<p>结果第一是YWJ？CZN后来又交了一次</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>结果第一是YWJ？CZN后来又交了一次 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
     <entry>
@@ -503,10 +505,10 @@ int main() {
         <link href="https://Deng-Duck.github.io/post/qian-tan-bei-zeng-fa-qiu-jie-lca/">
         </link>
         <updated>2022-06-09T11:44:24.000Z</updated>
-        <summary type="html"><![CDATA[<p>倍增法求解LCA是LCA算法中效率较高的一种</p>
+        <summary type="html"><![CDATA[<p>倍增法求解LCA是LCA算法中效率较高的一种[^1]</p>
 <p>本文通过几道题带大家了解这个算法</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>倍增法求解LCA是LCA算法中效率较高的一种</p>
+        <content type="html"><![CDATA[<p>倍增法求解LCA是LCA算法中效率较高的一种<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <p>本文通过几道题带大家了解这个算法</p>
 <!-- more -->
 <h1 id="luogu-p3379-最近公共祖先">Luogu P3379 最近公共祖先</h1>
@@ -1181,21 +1183,13 @@ int main() {
     cout &lt;&lt; ans;
 }
 </code></pre>
-<script src="https://giscus.app/client.js"
-        data-repo="Deng-Duck/Deng-Duck.github.io"
-        data-repo-id="R_kgDOHp7how"
-        data-category="General"
-        data-category-id="DIC_kwDOHp7ho84CQ9lG"
-        data-mapping="url"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="dark"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Tarjan复杂度优秀，但是常数大 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content>
     </entry>
     <entry>

@@ -2063,7 +2063,7 @@ p > code {
       }
     @font-face {
       font-family: 'STFangsong';
-      src: url('/media/fonts/STFangsong.ttf');
+      src: url('https://cdn.jsdelivr.net/gh/deng-duck/deng-duck.github.io@master/media/fonts/STFangsong.ttf');
     }
     * {
         font-family: 'STFangsong';
@@ -2217,7 +2217,7 @@ font-size:22px;
     }input, textarea, code {
       cursor: text;
     }code > span.copy-code {
-      cursor: url('/media/curs/不要抄袭鸭！.cur'), text !important;
+      cursor: url('https://cdn.jsdelivr.net/gh/deng-duck/deng-duck.github.io@master/media/curs/不要抄袭鸭！.cur'), text !important;
     }.post img {
       cursor: zoom-in;
     }.post img {

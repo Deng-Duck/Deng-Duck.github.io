@@ -16,7 +16,7 @@
 .hljs-regexp,
 .hljs-deletion {
   color: #c82829;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 
 /* Tomorrow Orange */
@@ -29,7 +29,7 @@
 .hljs-meta,
 .hljs-link {
   color: #f5871f;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 
 /* Tomorrow Yellow */
@@ -43,21 +43,21 @@
 .hljs-bullet,
 .hljs-addition {
   color: #718c00;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 
 /* Tomorrow Blue */
 .hljs-title,
 .hljs-section {
   color: #4271ae;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 
 /* Tomorrow Purple */
 .hljs-keyword,
 .hljs-selector-tag {
   color: #8959a8;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 
 .hljs {
@@ -66,23 +66,23 @@
   background: white;
   color: #4d4d4c;
   padding: 0.5em;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 
 .hljs-emphasis {
   font-style: italic;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 
 .hljs-strong {
   font-weight: bold;
-  font-family:"JetBrainsMono-Regular";
+  font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 .hljs-meta-string
 {
-font-family:"JetBrainsMono-Regular";
+font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }
 .hljs-meta-keyword
 {
-font-family:"JetBrainsMono-Regular";
+font-family:"JetBrainsMono-Regular","Monaco","Consolas";
 }

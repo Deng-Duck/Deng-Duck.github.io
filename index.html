@@ -6,7 +6,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/deng-duck/deng-duck.github.io@main/favicon.ico?v=1664361415492">
   <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/deng-duck/deng-duck.github.io@main/favicon.ico?v=1664361415492" sizes="32x32">
   <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/deng-duck/deng-duck.github.io@main/favicon.ico?v=1664361415492" sizes="192x192">
@@ -96,9 +100,9 @@
 
             </div>
             <div class="media__body middle">
-              <h1 class="training__title"><a href="/training/58b29f5ad3d8a123ab08db76" data-emoji-enabled>我的新博客</a></h1>
+              <h1 class="training__title"><a href="https://dengduck.netlify.app" data-emoji-enabled>我的新博客</a></h1>
               <div class="training__intro typo">
-                <p>咕咕咕</p>
+                <p>全新搭建，可能比较简陋</p>
               </div>
 
             </div>
@@ -141,15 +145,10 @@
             </div>
           </div>
         </li>
+      serverURL: 'https://waline-1qzs3g2sx-deng-duck.vercel.app/',
+    });
+  </script>
               </ol>
-              <div id="vcomments"></div>
-              <script>
-                  new Valine({
-                      el: '#vcomments',
-                      appId: 'nzMmlv65dx0ZGyikyWbe77kl-MdYXbMMI',
-                      appKey: 'fg5l9Klp81dJnFDBLm9nccCR'
-                  })
-              </script>
           </div>
         <div class="section page--discussion_main">
      
